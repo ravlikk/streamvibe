@@ -7,8 +7,9 @@ a {
 footer.footer {
   background-color: #0f0f0f;
 }
-.footer__container {
-  margin: 16px;
+footer.footer {
+  width: 390px;
+  padding: 50px 16px 20px 16px;
 }
 .footer__wrapper {
   display: flex;
@@ -29,7 +30,7 @@ footer.footer {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-
+  max-width: 179px;
   gap: 16px;
   flex: 1 0 0;
 }
@@ -53,4 +54,20 @@ footer.footer {
   font-style: normal;
   font-weight: 500;
   line-height: 150%; /* 21px */
+}
+.fo{
+  color: #fff;
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 24px */
+  width: 40v;
+}
+.footer__contacts {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 16px;
+  flex: 1 0 0;
 }
