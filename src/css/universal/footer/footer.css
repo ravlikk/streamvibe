@@ -64,13 +64,14 @@ footer.footer {
   flex-direction: row;
   gap: 10px;
 }
-.footer__content{
+.footer__content {
   display: flex;
   flex-direction: column;
-  row-gap: 12px;
-  border-top: #999;
+  gap: 12px;
+  border-top:solid 1px #262626;;
 }
-.content__text:first-of-type > p {
+.content__text {
+  margin-top: 20px;
   color: #999;
   font-family: Manrope;
   font-size: 14px;
@@ -78,14 +79,11 @@ footer.footer {
   line-height: 150%;
 }
 .content__text:last-of-type {
-  color: #999;
-  font-family: Manrope;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 150%; /* 21px */
- 
-  a{
-    border-right: #999;
+  a::after{
+    content: "";
+    position: absolute;
+   
     
+    border-right: solid 2px #262626;;
   }
 }
