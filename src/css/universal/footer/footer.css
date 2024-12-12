@@ -9,13 +9,15 @@ footer.footer {
 }
 footer.footer {
   width: 390px;
-  padding: 50px 16px 20px 16px;
+ 
 }
+
 .footer__wrapper {
   display: flex;
   flex-direction: column;
   gap: 30px;
   align-self: stretch;
+  
 }
 .footer__items {
   display: flex;
@@ -23,10 +25,12 @@ footer.footer {
   flex-wrap: wrap;
   row-gap: 30px;
   align-self: stretch;
+  
 }
 .footer__item {
   display: flex;
   flex-direction: column;
+  width: 137px;
   max-width: 179px;
   gap: 16px;
 }
@@ -42,7 +46,7 @@ footer.footer {
   line-height: 150%; /* 24px */
 }
 .footer-list___item {
-  width: 40vw;
+  
   color: #999;
   font-family: Manrope;
   font-size: 14px;
@@ -50,7 +54,7 @@ footer.footer {
   font-weight: 500;
   line-height: 150%; /* 21px */
 }
-.fo{
+.fo {
   color: #fff;
   font-family: Manrope;
   font-size: 16px;
@@ -61,5 +65,5 @@ footer.footer {
 .footer__contacts {
   display: flex;
   flex-direction: row;
-  gap: 16px;
+  gap: 10px;
 }
