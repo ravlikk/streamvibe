@@ -1,0 +1,226 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+@media(max-width: 391px){
+    body{
+        width: 390px;
+        height: 3340px;
+    }
+    .header{
+        display: flex;
+        width: 390px;
+        padding: 40px 16px 14px 16px;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+
+    }
+    .header-logo{
+        display: flex;
+        width: 116.083px;
+        align-items: center;
+        gap: 1.75px;
+
+    }
+    .header-logo-image{
+        width: 35px;
+        height: 35px;
+    }
+    .header-logo-in-image{
+        width: 11.872px;
+        height: 11.872px;
+        position: absolute;
+        left: 28px;
+    }
+    .header-logo-text{
+        width: 79.333px;
+    height: 11.667px;
+
+    }
+    .header-buttons-container{
+        display: none;
+    }
+    .header-buttons-pc{
+        display: none;  
+    }
+    .header-last-button{
+        display: flex;
+        justify-content: center; 
+        padding: 12px;
+        gap: 10px;
+        border-radius: 6px;
+        border: 3px solid var(--Black-15, #262626);
+        background: var(--Black-10, #1A1A1A);
+    }
+}
+@media (min-width: 1439px) and (max-width:1920px) {
+    body{
+        background-color: #1F1F1F;
+        width: 1440px;
+        height: 2755px;
+    }
+    .header{
+        display: flex;
+        width: 1439px;
+        padding: 24px 80px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header-logo{
+        display: flex;
+        width: 165.833px;
+        justify-content: center;
+        align-items: center;
+        gap: 2.5px;
+    }
+    .header-logo-image{
+        width: 50px;
+        height: 50px;
+    }
+    .header-logo-text{
+        width: 113.333px;
+        height: 16.667px;
+        flex-shrink: 0;
+    }
+    .header-logo-in-image{
+        width: 16.96px;
+        height: 16.96px;
+        position: absolute;
+        left: 97px;
+    }
+    .text{
+        color: #FFF;
+        line-height: 150%; 
+        font-family: Manrope;
+    }
+    .header-buttons-container{
+        display: flex;
+        padding: 8px 8px 8px 30px;
+        align-items: center;
+        gap: 16px;
+        position: absolute;
+        right: 516.5px;
+        top: 18px;
+        border-radius: 12px;
+        border: 4px solid  #1F1F1F;
+        background: #0F0F0F;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+    }
+    .header-buttons-pc{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 14px;
+    }
+    .header-buttons-pc-first{
+        width: 24px;
+        height: 24px;
+    }
+    .header-buttons-pc-second{
+        width: 24px;
+        height: 24px;
+    }
+    .header-last-button{
+        display: none;
+    }
+
+}
+@media (min-width: 1921px){
+    body{
+        background-color: #1F1F1F;
+        width: 1920px;
+        height: 3340px;
+    }
+    .header{
+        display: flex;
+        width: 1921px;
+        padding: 30px 162px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header-logo{
+        display: flex;
+        width: 199px;
+        justify-content: center;
+        align-items: center;
+        gap: 3px;
+    }
+    .header-logo-in-image{
+        position: absolute;
+        left: 183px;
+    }
+    .text{
+        color: #FFF;
+        line-height: 150%; 
+        font-family: Manrope;
+    }
+    .header-buttons-container{
+        display: flex;
+        padding: 10px 10px 10px 40px;
+        align-items: center;
+        position: absolute;
+        right: 682px;
+        top: 30px;
+        gap: 30px;
+        border-radius: 12px;
+        border: 4px solid  #1F1F1F;
+        background: #0F0F0F;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+    }
+    .header-buttons{
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+    }
+    .header-buttons-pc{
+        display: flex;
+        gap: 30px;
+        
+    }
+    .header-last-button{
+        visibility: hidden;
+    }
+}

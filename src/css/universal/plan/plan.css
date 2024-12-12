@@ -1,0 +1,441 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body{
+	background: var(--Black-08, #141414);
+	width: 1920px;
+	height: 3340px;
+}
+.text{
+	color: #FFF;
+	line-height: 150%; 
+	font-family: Manrope;
+}
+.text-grey{
+    line-height: 150%; 
+	font-style: normal;
+	font-family: Manrope;
+	color: var(--Grey-60, #999);
+	font-size: 18px;
+}
+@media (max-width:391px) {
+    .section{
+        padding: 40px 15px 0px 17px;
+        width: 390px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 40px;
+    }
+    .section-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        gap: 20px;
+
+    }
+    .section-text-content{
+        
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+
+    }
+    .section-text-content:first-child{
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+    }
+    .section-text-join{
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+    }
+    .section-text-month-or-year{
+        padding: 8px;
+        align-items: center;
+        line-height:  100%;
+        display: flex;
+        font-size: 18px;
+        font-weight: 500;
+        border-radius: 10px;
+        border: 1px solid var(--Black-15, #262626);
+        background: var(--Black-06, #0F0F0F);
+    }
+    .section-text-month-or-year li{
+        padding: 14px 24px;
+    }
+    .section-text-month-or-year-month{
+        border-radius: 10px;
+        background: var(--Black-12, #1F1F1F);
+    }
+    .section-price{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .section-price-different{
+        width: 358px;
+        height: 275px;
+        display: flex;
+        padding: 24px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+        flex: 1 0 0;
+        border-radius: 10px;
+        border: 1px solid var(--Black-15, #262626);
+        background: var(--Black-10, #1A1A1A);
+    }
+    .section-price-different-in{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .section-price-different-in h3{ 
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+    }
+    .section-price-different-in p{  
+        font-size: 14px;
+        height: 81px;    
+        font-weight: 400;
+        align-self: stretch;
+    }
+    .section-price-per-month{
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 73%;
+    }
+    .section-price-per-month span{
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 73%;
+    }
+    .section-start-or-choose{
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+        align-self: stretch;    
+    }
+    .section-start{
+        border-radius: 8px;
+        border: 1px solid var(--Black-15, #262626);
+        background: var(--Black-08, #141414);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        display: flex;
+        padding: 14px 20px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        flex: 1 0 0;
+    }
+    .section-choose{
+        display: flex;
+        padding: 14px 20px;
+        justify-content: center;
+        align-items: center;
+        flex: 1 0 0;
+        font-size: 14px;
+        font-style: normal; 
+        font-weight: 600;
+        border-radius: 8px;
+        background: var(--Red-45, #E50000);
+    }
+
+
+}
+@media (min-width:1439px){
+    .section{
+        display: flex;
+        width: 1280px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 60px;
+        padding: 100px 79px 0px 80px;
+    }
+    .section-text{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 80px;
+    }
+    .section-text-content{
+        width: 1010px;
+        line-height: 150%;
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        flex: 1 0 0;
+        align-self: stretch;
+    }
+    .section-text-content:first-child{
+        font-size: 28px;
+        font-weight: 700;
+    }
+    .section-text-join{
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+    }
+    .section-text-month-or-year{
+        padding: 10px;
+        line-height:  100%;
+        display: flex;
+        transform: translateY(20%);
+        font-size: 14px;;
+        font-weight: 500;
+        border-radius: 10px;
+        border: 1px solid var(--Black-15, #262626);
+        background: var(--Black-06, #0F0F0F);
+    }
+    .section-text-month-or-year li{
+        padding: 14px 24px;
+    }
+    .section-text-month-or-year-month{
+        border-radius: 10px;
+        background: var(--Black-12, #1F1F1F);
+    }
+    .section-price{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    .section-price-different{
+        width: 413px;
+        display: flex;
+        padding: 40px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 40px;
+        flex: 1 0 0;
+        border-radius: 10px;
+        border: 1px solid var(--Black-15, #262626);
+        background: var(--Black-10, #1A1A1A);
+    }
+    .section-price-different-in{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        align-self: stretch;
+    }
+    .section-price-different-in h3{ 
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+    }
+    .section-price-different-in p{  
+        height: 72px;    
+        font-weight: 400;
+        align-self: stretch;
+    }
+    .section-price-per-month{
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 73%;
+    }
+    .section-start-or-choose{
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+        align-self: stretch;    
+    }
+    .section-start{
+        border-radius: 6px;
+        border: 1px solid var(--Black-15, #262626);
+        background: var(--Black-08, #141414);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        display: flex;
+        padding: 14px 20px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        flex: 1 0 0;
+    }
+    .section-choose{
+        display: flex;
+        padding: 14px 20px;
+        justify-content: center;
+        align-items: center;
+        flex: 1 0 0;
+        font-size: 14px;
+        font-style: normal; 
+        font-weight: 600;
+        border-radius: 6px;
+        background: var(--Red-45, #E50000);
+    }
+}
+@media(min-width:1921px){
+    .section{
+        display: flex;
+        width: 1596px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 80px;
+        padding: 100px 163px 0px 163px;
+    }
+    .section-text{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 100px;
+    }
+    .section-text-content{
+        width: 1259px;
+        line-height: 150%;
+        align-self: stretch;
+    }
+    
+    .section-text-content:first-child{
+        font-size: 48px;
+        font-weight: 700;
+    }
+    .section-text-join{
+        font-style: normal;
+        font-weight: 400;
+    }
+    
+    .section-text-month-or-year{
+        padding: 10px;
+        line-height:  100%;
+        display: flex;
+        transform: translateY(50%);
+        font-size: 18px;
+        font-weight: 500;
+        border-radius: 10px;
+        border: 1px solid var(--Black-15, #262626);
+        background: var(--Black-06, #0F0F0F);
+    }
+    .section-text-month-or-year li{
+        padding: 14px 24px;
+    }
+    .section-text-month-or-year-month{
+        border-radius: 10px;
+        background: var(--Black-12, #1F1F1F);
+    }
+    .section-price{
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+    .section-price-different{
+        width: 512px;
+        height: 425px;
+        display: flex;
+        padding: 50px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 50px;
+        flex: 1 0 0;
+        border-radius: 10px;
+        border: 1px solid var(--Black-15, #262626);
+        background: var(--Black-10, #1A1A1A);
+    }
+    .section-price-different-in{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        align-self: stretch;
+    }
+    .section-price-different-in h3{ 
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+    }
+    .section-price-different-in p{  
+        height: 81px;    
+        font-weight: 400;
+        align-self: stretch;
+    }
+    .section-price-per-month{
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 73%;
+    }
+    .section-start-or-choose{
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+        align-self: stretch;    
+    }
+    .section-start{
+        border-radius: 8px;
+        border: 1px solid var(--Black-15, #262626);
+        background: var(--Black-08, #141414);
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        display: flex;
+        padding: 18px 24px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        flex: 1 0 0;
+    }
+    .section-choose{
+        display: flex;
+        padding: 18px 24px;
+        justify-content: center;
+        align-items: center;
+        flex: 1 0 0;
+        font-size: 18px;
+        font-style: normal; 
+        font-weight: 600;
+        border-radius: 8px;
+        background: var(--Red-45, #E50000);
+    }
+}
