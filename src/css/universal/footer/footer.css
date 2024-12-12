@@ -67,8 +67,8 @@ footer.footer {
 .footer__content {
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  border-top:solid 1px #262626;;
+  gap: 20px;
+  border-top: solid 1px #262626;
 }
 .content__text {
   margin-top: 20px;
@@ -79,11 +79,9 @@ footer.footer {
   line-height: 150%;
 }
 .content__text:last-of-type {
-  a::after{
-    content: "";
-    position: absolute;
-   
-    
-    border-right: solid 2px #262626;;
+  a{
+    text-align: center;
+    width: 110px;
+    border-right: 2px solid #262626;
   }
 }
