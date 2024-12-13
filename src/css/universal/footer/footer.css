@@ -51,19 +51,12 @@ footer.footer {
   font-weight: 500;
   line-height: 150%; /* 21px */
 }
-.fo {
-  color: #fff;
-  font-family: Manrope;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 150%; /* 24px */
-  width: 40v;
-}
 .footer__contacts {
   display: flex;
   flex-direction: row;
   gap: 10px;
 }
+
 .footer__content {
   display: flex;
   flex-direction: column;
