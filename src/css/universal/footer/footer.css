@@ -41,7 +41,7 @@ footer.footer {
   font-family: Manrope;
   font-size: 16px;
   font-weight: 600;
-  line-height: 150%; /* 24px */
+
 }
 .footer-list___item {
   color: #999;
@@ -49,8 +49,18 @@ footer.footer {
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
-  line-height: 150%; /* 21px */
+
 }
+<<<<<<< HEAD
+=======
+.fo {
+  color: #fff;
+  font-family: Manrope;
+  font-size: 16px;
+  font-weight: 600;
+  width: 40v;
+}
+>>>>>>> 8f6336476c19c596a193b7b63ca82008cadea4a6
 .footer__contacts {
   display: flex;
   flex-direction: row;
@@ -69,7 +79,6 @@ footer.footer {
   font-family: Manrope;
   font-size: 14px;
   font-weight: 400;
-  line-height: 150%;
 }
 .content__text:last-of-type {
   a {
@@ -77,6 +86,12 @@ footer.footer {
     width: 110px;
     border-right: 2px solid #262626;
   }
+
+}
+.footer__list{
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
 }
 @media (min-width: 1440px) {
   footer.footer {
@@ -100,13 +115,11 @@ footer.footer {
   .footer__item > p {
     font-size: 18px;
     font-weight: 600;
-    line-height: 150%; /* 27px */
   }
   .footer-list___item {
     color: #999;
     font-size: 16px;
     font-weight: 500;
-    line-height: 150%; /* 24px */
   }
   .footer__items{
     gap: 20px;
@@ -137,16 +150,13 @@ footer.footer {
   .footer__item > p {
     font-size: 20px;
     font-weight: 600;
-    line-height: 150%; /* 30px */
   }
   .footer-list___item {
     font-size: 18px;
     font-weight: 500;
-    line-height: 150%; /* 27px */
   }
   .content__text {
     font-size: 18px;
     font-weight: 400;
-    line-height: 150%; /* 27px */
   }
 }
