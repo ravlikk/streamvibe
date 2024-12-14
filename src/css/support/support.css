@@ -1,8 +1,24 @@
 .welcome {
   background-color: Black;
 }
-
+.welcome__container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin: 0 11px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.container__title {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 .welcome-title__text {
+  width: 357px;
   font-family: Manrope;
   font-size: 28px;
   font-weight: 700;
@@ -10,8 +26,104 @@
   color: #ffffff;
 }
 .welcome__text {
+  width: 357px;
   color: #999;
   font-family: Manrope;
   font-size: 14px;
   font-weight: 400;
+}
+.welcome__container-img {
+  border: 6px solid #262626;
+  border-radius: 4px;
+}
+.welcome__form {
+  border-radius: 10px;
+  border: 1px solid #262626;
+  background: #0f0f0f;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.welcome-form__title {
+  color: #fff;
+  font-family: Manrope;
+  font-size: 16px;
+  font-weight: 600;
+}
+.welcome-form__container{
+  display: flex;
+  gap: 12px;
+}
+.welcome-form__input {
+  height: 53px;
+  width: 100%;
+  padding: 16px;
+  border-radius: 6px;
+  border: 1px solid #262626;
+  background: #141414;
+  color: #999;
+  font-family: Manrope;
+  font-size: 14px;
+  font-weight: 400;
+}
+.welcome__phone-num {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.welcome-form__textarea {
+  height: 77px;
+  border-radius: 6px;
+  border: 1px solid #262626;
+  background: #141414;
+  padding: 16px;
+  resize: none;
+}
+.welcome__select {
+  width: 80px;
+  height: 53px;
+  border-radius: 6px;
+  border: 1px solid #262626;
+  background: #141414 url("../img/support/welcome/india.svg") no-repeat 5px;
+}
+.welcome-form__btn {
+  border-radius: 6px;
+  background: #e50000;
+  padding: 14px 20px;
+  color: #fff;
+}
+.welcome-container__agree {
+  display: flex;
+  justify-content: space-between;
+}
+.welcome__agree {
+  width: 277px;
+  color: #999;
+  font-family: Manrope;
+  font-size: 16px;
+  font-weight: 400;
+}
+.t input {
+  display: none; /* <--скрываем дефолтный чекбокс */
+}
+.t span {
+  /* <-- стилизируем новый */
+  height: 24px;
+  width: 24px;
+  border: 1px solid gray;
+  display: inline-block;
+  position: relative;
+  background-color: black;
+  border-radius: 2px;
+  padding: 3px;
+}
+[type="checkbox"]:checked + span:before {
+  /* <-- ставим иконку, когда чекбокс включен  */
+  content: "\2714";
+  position: absolute;
+  top: -5px;
+  left: 0;
+  font-size: 23px;
+  color: green;
 }
