@@ -23,6 +23,7 @@
   font-weight: 700;
   text-align: left;
   color: #ffffff;
+  line-height: 150%;
 }
 .welcome__text {
   width: 357px;
@@ -30,6 +31,7 @@
   font-family: Manrope;
   font-size: 14px;
   font-weight: 400;
+  line-height: 150%;
 }
 .welcome__container-img {
   border: 6px solid #262626;
@@ -73,9 +75,21 @@
     width: 245px;
   }
 }
+.welcome__container-select::after{
+  content: "";
+  position: absolute;
+  transform: translate(45px, 20px);
+  width: 12px; /* Размер стрелки */
+  height: 12px;
+  background-image: url("../img/icon/arow.svg"); /* Кастомная стрелка */
+  background-size: contain;
+  background-repeat: no-repeat;
+  pointer-events: none; /* Чтобы стрелка не мешала клику на селект */
+}
 .welcome-form__select {
   width: 60px;
   height: 53px;
+  appearance: none;
   border-radius: 6px;
   border: 1px solid #262626;
   background: #141414 url("../img/support/welcome/india.svg") no-repeat 4px;
