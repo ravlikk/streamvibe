@@ -5,7 +5,6 @@
   display: flex;
   flex-direction: column;
   gap: 50px;
- 
 }
 .container {
   display: flex;
@@ -92,6 +91,11 @@
 }
 .welcome-form__container-checkbox {
   display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.welcome-form__container-text {
+  display: flex;
   flex-direction: row;
   gap: 8px;
 }
@@ -115,11 +119,11 @@
   /* <-- стилизируем новый */
   height: 24px;
   width: 24px;
-  border: 1px solid gray;
+  border: 1px solid #262626;
   display: inline-block;
   position: relative;
   background-color: black;
-  border-radius: 2px;
+  border-radius: 4px;
   padding: 3px;
 }
 [type="checkbox"]:checked + span:before {
@@ -130,7 +134,6 @@
 }
 @media (min-width: 1440px) {
   .welcome__container {
-    
     flex-direction: row;
     padding: 40px;
   }
@@ -145,24 +148,26 @@
   }
   .welcome__textarea {
     width: 720px;
+    height: 129px;
   }
   .welcome__text-agree {
     width: 480px;
   }
-  .inp
-  .welcome-form__container-checkbox {
+  .inp .welcome-form__container-checkbox {
     max-height: 24px;
   }
-  .welcome-form__btn{
+  .welcome-form__btn {
     width: 188px;
-    
   }
-  .welcome__container-select{
-    input{
+  .welcome__container-select {
+    input {
       width: 276px;
     }
   }
-}
-@media(min-width: 1920px){
-
+  .welcome-form__container-checkbox{
+    flex-direction: row;
+  }
+  .welcome-form__container-text{
+    align-self: center;
+  }
 }
