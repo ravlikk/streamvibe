@@ -2,30 +2,38 @@
   background: #141414;
 }
 .container {
+  max-width: 390px;
   margin: 0 auto;
 }
 .start__container {
   border-radius: 12px;
   border: 1px solid #262626;
-  padding: 30px 50px;
+  padding: 30px 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 50px;
- background: linear-gradient(
+  background: linear-gradient(
     180deg,
     rgba(15, 15, 15, 1) 0%,
-    rgba(20, 15, 15, 1) 20%,
-    rgba(34, 14, 14, 0.9) 75%,
+    rgba(20, 15, 15, 1) 35%,
+    rgba(34, 14, 14, 0.9) 65%,
     rgba(229, 0, 0, 0.30024509803921573) 100%
   );
-  
 }
-.start__picture{
-  margin: 80px 16px;
-  background-position: center;
-   background-image: url(../../../img/universal/start/Group2.png);
 
+.start__picture {
+  max-width: 390px;
+  margin: 0 auto;
+  border-radius: 12px;
+  border: 1px solid #262626;
+  background-position: center;
+  background-image: url(../../../img/universal/start/Group2.png);
+}
+.start__box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 .title {
   color: #fff;
@@ -34,7 +42,7 @@
   text-align: center;
   font-size: 24px;
   font-weight: 700;
-  line-height: 2.1;
+  line-height: 1.5;
 }
 .text {
   color: #999;
@@ -43,7 +51,7 @@
   text-align: center;
   font-size: 14px;
   font-weight: 400;
-  line-height: 2.1;
+  line-height: 1.5;
 }
 .btn {
   border-radius: 8px;
@@ -56,7 +64,11 @@
 } 
 
 @media (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+  }
   .start__container {
+    max-width: 1440px;
     padding: 87px 62px;
     gap: 100px;
     flex-direction: row;
@@ -69,13 +81,11 @@
     );
   }
 
-  .start__picture{
-    margin: 120px 78px;
+  .start__picture {
+    max-width: 1440px;
+    margin: 0 auto;
     background-position: center;
-    background: url('../../../img/universal/start/Group3.png');
-    }
-  .start__box {
-    width: 911px;
+    background: url("../../../img/universal/start/Group3.png");
   }
   .start__title {
     text-align: left;
@@ -91,23 +101,25 @@
 }
 
 @media (min-width: 1920px) {
+  .container {
+    max-width: 1920px;
+  }
   .start__container {
+    gap: 0px;
+    max-width: 1920px;
     padding: 115px 80px;
     background: linear-gradient(
-        90deg,
-        rgba(15, 15, 15, 1) 0%,
-        rgba(20, 15, 15, 1) 20%,
-        rgba(34, 14, 14, 0.9) 75%,
-        rgba(229, 0, 0, 0.30024509803921573) 100%
-      );
+      90deg,
+      rgba(15, 15, 15, 1) 0%,
+      rgba(20, 15, 15, 1) 20%,
+      rgba(34, 14, 14, 0.9) 75%,
+      rgba(229, 0, 0, 0.30024509803921573) 100%
+    );
   }
-  .start__picture{
-    margin: 135px 162px;
+  .start__picture {
+    margin: 0 auto;
     background-position: center;
     background: url(../../../img/universal/start/Group4.png);
-    }
-  .start__box {
-    width: 1148px;
   }
   .start__title {
     font-size: 48px;
@@ -117,8 +129,9 @@
     font-size: 18px;
   }
   .start__btn {
+    padding: 18px 24px;
     margin: 0 0 0 auto;
     font-size: 18px;
-    line-height: 2.1;
+    line-height: 1.5;
   }
 }
