@@ -24,26 +24,18 @@ display: flex;
 .footer__item {
   display: flex;
   flex-direction: column;
-  width: 179px;
   max-width: 179px;
   gap: 16px;
 }
-
-* {
-  padding: 0;
-}
 .footer__item > p {
   color: #fff;
-  font-family: Manrope;
   font-size: 16px;
   font-weight: 600;
 
 }
 .footer-list___item {
   color: #999;
-  font-family: Manrope;
   font-size: 14px;
-  font-style: normal;
   font-weight: 500;
 
 }
@@ -62,9 +54,7 @@ display: flex;
 .content__text {
   margin-top: 20px;
   color: #999;
-  font-family: Manrope;
   font-size: 14px;
-  font-weight: 400;
 }
 .content__text:last-of-type {
   a {
@@ -103,9 +93,7 @@ display: flex;
     font-weight: 600;
   }
   .footer-list___item {
-    color: #999;
     font-size: 16px;
-    font-weight: 500;
   }
   .footer__items{
     gap: 20px;
@@ -143,6 +131,5 @@ display: flex;
   }
   .content__text {
     font-size: 18px;
-    font-weight: 400;
   }
 }
