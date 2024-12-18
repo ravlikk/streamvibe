@@ -1,0 +1,135 @@
+.questions {
+  background-color: #141414;
+}
+.questions__container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 0 16px;
+}
+.questions__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.questions__wrapper-title {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.questions-wrapper__logo {
+  color: #fff;
+  font-family: Manrope;
+  font-size: 20px;
+  font-weight: 700;
+}
+.questions-wrapper__text {
+  color: #999;
+  font-family: Manrope;
+  font-size: 14px;
+  font-weight: 400;
+}
+.questions-wrapper__btn {
+  width: 140px;
+  padding: 14px 20px;
+  border-radius: 6px;
+  background: #e50000;
+  color: #fff;
+}
+
+.questions__items-first {
+  position: relative;
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+  color: #fff;
+  padding-bottom: 40px;
+  padding-left: 10px;
+  .questions__content-first {
+    display: flex;
+    gap: 16px;
+    .questions__logo-content-first {
+      font-family: Manrope;
+      font-size: 18px;
+      font-weight: 500;
+      padding: 10px;
+    }
+    .questions__number-first {
+      padding: 12px;
+      border-radius: 6px;
+      border: 1px solid #262626;
+      background: #1f1f1f;
+    }
+  }
+}
+.questions__items-first::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    rgba(229, 0, 0, 0) 0%,
+    #e50000 16.67%,
+    rgba(229, 0, 0, 0) 100%
+  );
+}
+.questions__name {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.questions__items {
+  display: flex;
+  gap: 12px;
+  position: relative;
+  padding: 40px 10px;
+  .questions__number {
+    max-width: 44px;
+    max-height: 46px;
+    color: #fff;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #262626;
+    background: #1f1f1f;
+  }
+  .questions__logo-content {
+    color: #fff;
+    font-family: Manrope;
+    font-size: 18px;
+    font-weight: 500;
+    width: 245px;
+    line-height: 27px;
+  }
+  .questions__logo-content::after{
+    content: "";
+    display: block; /* Зробити псевдоелемент блоковим */
+    width: 24px;    /* Вкажіть ширину */
+    height: 24px; 
+    position: absolute;
+    right: 10px;
+    top: 55px;
+    background-image:url('../img/icon/plus.svg');
+  }
+}
+.questions__list:last-of-type li:nth-last-child(-n+2){
+    display: none;
+}
+.questions__list:first-of-type li:nth-child(4)::after{
+  background: none;
+}
+.questions__list:first-of-type li:nth-child(4){
+  padding: 20px 10px;
+  padding-top: 40px;
+}
+.questions__items::after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, rgba(229, 0, 0, 0.00) 0%, #E50000 16.67%, rgba(229, 0, 0, 0.00) 100%);
+}
