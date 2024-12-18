@@ -1,5 +1,5 @@
 body {
-  background-color: #0f0f0f;
+  background-color: #141414;
 }
 .text {
   color: #fff;
@@ -11,9 +11,8 @@ body {
   font-style: normal;
   font-family: Manrope;
   color: var(--Grey-60, #999);
-  font-size: 18px;
 }
-.section {
+section {
   padding-top: 40px;
 }
 .section__container {
@@ -48,23 +47,21 @@ body {
   font-style: normal;
   font-weight: 400;
 }
+
 .section-text-month-or-year {
   padding: 8px;
   align-items: center;
   line-height: 100%;
   display: flex;
-  font-size: 18px;
   font-weight: 500;
   border-radius: 10px;
-  border: 1px solid var(--Black-15, #262626);
-  background: var(--Black-06, #0f0f0f);
+  
 }
 .section-text-month-or-year li {
   padding: 14px 24px;
 }
-.section-text-month-or-year-month {
-  border-radius: 10px;
-  background: var(--Black-12, #1f1f1f);
+.section-text-month-or-year-year{
+  font-size: 14px;
 }
 .section-price {
   display: flex;
@@ -125,7 +122,7 @@ body {
 }
 
 @media (min-width: 1439px) {
-  .section {
+  section {
     display: flex;
   }
   .section__container {
@@ -240,7 +237,7 @@ body {
   }
 }
 @media (min-width: 1921px) {
-  .section {
+  section {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
