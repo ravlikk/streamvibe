@@ -1,4 +1,4 @@
-.header {
+header {
     background-color: #141414;
 }
 .header__container {
@@ -34,7 +34,7 @@
   background: var(--Black-10, #1a1a1a);
 }
 @media (min-width: 1439px) and (max-width: 1920px) {
-  .header {
+  header {
     display: flex;
     padding: 24px 0px 24px 0;
   }
@@ -90,7 +90,7 @@
   }
 }
 @media (min-width: 1921px) {
-  .header {
+  header {
     display: flex;
     padding: 30px 0px 100px;
   }
