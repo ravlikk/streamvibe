@@ -2,8 +2,9 @@
   background-color: Black;
 }
 .welcome__container {
+  margin: 0 auto;
+  max-width: 1280px;
   display: flex;
-  flex-direction: column;
   gap: 50px;
 }
 .container {
@@ -147,10 +148,7 @@
   color: green;
 }
 @media (min-width: 1440px) {
-  .welcome__container {
-    flex-direction: row;
-    padding: 40px;
-  }
+  /*  */
   .welcome__form {
     flex-direction: row;
     flex-wrap: wrap;
@@ -197,7 +195,7 @@
   .welcome-form__title-input {
     font-size: 18px;
     font-weight: 600;
-    line-height: 150%; /* 27px */
+    line-height: 27px; /* 27px */
   }
   
 }
