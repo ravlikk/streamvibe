@@ -12,10 +12,10 @@ body {
   font-family: Manrope;
   color: var(--Grey-60, #999);
 }
-section {
+section{
   padding-top: 40px;
 }
-.section__container {
+.plan__container {
   margin: 0 auto;
   width: 358px;
 }
@@ -24,51 +24,49 @@ section {
   flex-direction: column;
   gap: 40px;
 }
-.section-text {
+.plan-text {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-start;
   gap: 20px;
 }
-.section-text-content {
+.plan-text-content {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 10px;
 }
-.section-text-content:first-child {
+.plan-text-content:first-child {
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
 }
-.section-text-join {
+.plan-text-join {
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
 }
 
-.section-text-month-or-year {
-  padding: 8px;
+.plan-text-month-or-year {
   align-items: center;
   line-height: 100%;
   display: flex;
   font-weight: 500;
   border-radius: 10px;
-  
 }
-.section-text-month-or-year li {
+.plan-text-month-or-year li {
   padding: 14px 24px;
 }
-.section-text-month-or-year-year{
+.plan-text-month-or-year-year {
   font-size: 14px;
 }
-.section-price {
+.plan-price {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.section-price-different {
+.plan-price-different {
   display: flex;
   padding: 24px;
   flex-direction: column;
@@ -78,34 +76,34 @@ section {
   border: 1px solid var(--Black-15, #262626);
   background: var(--Black-10, #1a1a1a);
 }
-.section-price-different-in {
+.plan-price-different-in {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.section-price-different-in h3 {
+.plan-price-different-in h3 {
   font-size: 18px;
   font-weight: 700;
 }
-.section-price-different-in p {
+.plan-price-different-in p {
   font-size: 14px;
 }
-.section-price-per-month {
+.plan-price-per-month {
   font-size: 24px;
   font-weight: 600;
   line-height: 73%;
 }
-.section-price-per-month span {
+.plan-price-per-month span {
   font-size: 14px;
   font-weight: 500;
   line-height: 73%;
 }
-.section-start-or-choose {
+.plan-start-or-choose {
   display: flex;
   justify-content: space-between;
   gap: 30px;
 }
-.section-start {
+.plan-start {
   border-radius: 8px;
   border: 1px solid var(--Black-15, #262626);
   background: var(--Black-08, #141414);
@@ -113,7 +111,7 @@ section {
   font-weight: 600;
   padding: 14px 25px;
 }
-.section-choose {
+.plan-choose {
   padding: 14px 25px;
   font-size: 14px;
   font-weight: 600;
@@ -122,10 +120,10 @@ section {
 }
 
 @media (min-width: 1439px) {
-  section {
+  section{
     display: flex;
   }
-  .section__container {
+  .plan__container {
     margin: 0 auto;
     width: 1280px;
   }
@@ -134,30 +132,29 @@ section {
     flex-direction: column;
     gap: 80px;
   }
-  .section-text {
+  .plan-text {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
     gap: 100px;
   }
-  .section-text-content {
+  .plan-text-content {
     line-height: 150%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
   }
-  .section-text-content:first-child {
+  .plan-text-content:first-child {
     font-size: 28px;
     font-weight: 700;
   }
-  .section-text-join {
+  .plan-text-join {
     font-size: 16px;
     font-weight: 400;
   }
-  .section-text-month-or-year {
-    padding: 10px;
+  .plan-text-month-or-year {
     line-height: 100%;
     display: flex;
     transform: translateY(20%);
@@ -167,19 +164,19 @@ section {
     border: 1px solid var(--Black-15, #262626);
     background: var(--Black-06, #0f0f0f);
   }
-  .section-text-month-or-year li {
+  .plan-text-month-or-year li {
     padding: 14px 24px;
   }
-  .section-text-month-or-year-month {
+  .plan-text-month-or-year-month {
     border-radius: 10px;
     background: var(--Black-12, #1f1f1f);
   }
-  .section-price {
+  .plan-price {
     display: flex;
     flex-direction: row;
     gap: 20px;
   }
-  .section-price-different {
+  .plan-price-different {
     width: 100%;
     display: flex;
     padding: 40px;
@@ -190,34 +187,34 @@ section {
     border: 1px solid var(--Black-15, #262626);
     background: var(--Black-10, #1a1a1a);
   }
-  .section-price-different-in {
+  .plan-price-different-in {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 12px;
     align-self: stretch;
   }
-  .section-price-different-in h3 {
+  .plan-price-different-in h3 {
     font-size: 20px;
     font-weight: 700;
   }
-  .section-price-different-in p {
+  .plan-price-different-in p {
     height: 72px;
     font-weight: 400;
     align-self: stretch;
   }
-  .section-price-per-month {
+  .plan-price-per-month {
     font-size: 30px;
     font-weight: 600;
     line-height: 73%;
   }
-  .section-start-or-choose {
+  .plan-start-or-choose {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     align-self: stretch;
   }
-  .section-start {
+  .plan-start {
     border-radius: 6px;
     border: 1px solid var(--Black-15, #262626);
     background: var(--Black-08, #141414);
@@ -227,7 +224,7 @@ section {
     padding: 14px 30px;
     gap: 10px;
   }
-  .section-choose {
+  .plan-choose {
     display: flex;
     padding: 14px 30px;
     font-size: 14px;
@@ -243,32 +240,32 @@ section {
     align-items: flex-start;
     gap: 80px;
   }
-  .section__container {
+  .plan__container {
     margin: 0 auto;
     width: 1596px;
   }
-  .section-text {
+  .plan-text {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     gap: 100px;
   }
-  .section-text-content {
+  .plan-text-content {
     width: 1259px;
     line-height: 150%;
     align-self: stretch;
   }
 
-  .section-text-content:first-child {
+  .plan-text-content:first-child {
     font-size: 48px;
     font-weight: 700;
   }
-  .section-text-join {
+  .plan-text-join {
     font-style: normal;
     font-weight: 400;
   }
 
-  .section-text-month-or-year {
+  .plan-text-month-or-year {
     padding: 10px;
     line-height: 100%;
     display: flex;
@@ -279,19 +276,19 @@ section {
     border: 1px solid var(--Black-15, #262626);
     background: var(--Black-06, #0f0f0f);
   }
-  .section-text-month-or-year li {
+  .plan-text-month-or-year li {
     padding: 14px 24px;
   }
-  .section-text-month-or-year-month {
+  .plan-text-month-or-year-month {
     border-radius: 10px;
     background: var(--Black-12, #1f1f1f);
   }
-  .section-price {
+  .plan-price {
     display: flex;
     flex-direction: row;
     gap: 30px;
   }
-  .section-price-different {
+  .plan-price-different {
     width: 0 auto;
     display: flex;
     padding: 50px;
@@ -302,36 +299,36 @@ section {
     border: 1px solid var(--Black-15, #262626);
     background: var(--Black-10, #1a1a1a);
   }
-  .section-price-different-in {
+  .plan-price-different-in {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 16px;
     align-self: stretch;
   }
-  .section-price-different-in h3 {
+  .plan-price-different-in h3 {
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
   }
-  .section-price-different-in p {
+  .plan-price-different-in p {
     height: 81px;
     font-weight: 400;
     align-self: stretch;
   }
-  .section-price-per-month {
+  .plan-price-per-month {
     font-size: 40px;
     font-style: normal;
     font-weight: 600;
     line-height: 73%;
   }
-  .section-start-or-choose {
+  .plan-start-or-choose {
     display: flex;
     align-items: flex-start;
     gap: 20px;
     align-self: stretch;
   }
-  .section-start {
+  .plan-start {
     border: 1px solid var(--Black-15, #262626);
     background: var(--Black-08, #141414);
     font-size: 18px;
@@ -339,7 +336,7 @@ section {
     padding: 18px 34px;
     gap: 10px;
   }
-  .section-choose {
+  .plan-choose {
     padding: 18px 34px;
     font-size: 18px;
     font-weight: 600;
