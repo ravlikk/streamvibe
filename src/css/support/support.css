@@ -3,9 +3,11 @@
 }
 .welcome__container {
   margin: 0 auto;
-  max-width: 1280px;
+  max-width: 370px;
   display: flex;
+  flex-direction: column;
   gap: 50px;
+  
 }
 .container {
   display: flex;
@@ -154,6 +156,10 @@
     flex-wrap: wrap;
     padding: 40px;
     width: 810px;
+  }
+  .welcome__container{
+    max-width: 1280px;
+    flex-direction: row;
   }
   .welcome-form__input {
     width: 350px;
