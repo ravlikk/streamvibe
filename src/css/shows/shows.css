@@ -1,0 +1,71 @@
+.play-show {
+    background: #141414;
+  }
+  .container {
+
+  }
+  .play-show__container {
+    display: flex;
+    height: 468px;
+    padding: 24px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    border-radius: 12px;
+    border: 1px solid #262626;
+  }
+  .play-show__container::after{
+    content: "";
+    background: linear-gradient(0deg, #141414 0%, rgba(20, 20, 20, 0) 100%);
+
+  }
+  .start__img{
+    max-width: 390px;
+    margin: 0 auto;
+    border-radius: 12px;
+    border: 1px solid #262626;
+    background-position: center;
+    background-image: url(../../img/play-show/playy.jpg);
+  }
+  .title {
+  }
+  .play-show__title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.1;
+  }
+  .play-show__text {
+    display: none;
+  }
+  .text {
+  }
+  .all {
+  }
+  .play-show__all {
+  }
+  .btn {
+  }
+  .play-show__btn {
+    width: 100%;
+    font-size: 14px;
+    line-height: 1.2;
+    padding: 14px 20px;
+  }
+  .play {
+  }
+  .play-show__button__play {
+  }
+  .img {
+  }
+  .play-show__button__play__img {
+  }
+  .box {
+  }
+  .play-show__box {
+  }
+  .play-show__box__button {
+  }
+  .play-show__box__btn__img {
+  }

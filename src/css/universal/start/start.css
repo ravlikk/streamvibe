@@ -1,18 +1,36 @@
 .start {
   background: #141414;
-}
-.container {
-  max-width: 390px;
-  margin: 0 auto;
+  padding-block: 30px;
 }
 .start__container {
+  max-width: 333px;
+  margin: 0 auto;
   border-radius: 12px;
   border: 1px solid #262626;
-  padding: 30px 60px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 50px;
+  padding: 50px 30px;
+  position: relative;
+  overflow: hidden;
+}
+.start__background {
+  border-radius: 12px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  object-fit: cover;
+  background-repeat: no-repeat;
+}
+.start__container::after {
+  border-radius: 12px;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
   background: linear-gradient(
     180deg,
     rgba(15, 15, 15, 1) 0%,
@@ -22,46 +40,47 @@
   );
 }
 
-.start__picture {
-  max-width: 390px;
-  margin: 0 auto;
-  border-radius: 12px;
-  border: 1px solid #262626;
-  background-position: center;
-  background-image: url(../../../img/universal/start/Group2.png);
-}
 .start__box {
+  position: relative;
+  text-align: center;
   display: flex;
   flex-direction: column;
   gap: 10px;
+  padding-bottom: 50px;
+  z-index: 100;
 }
-.title {
+.text{
+  color: #999;
+ 
+}
+.start__text {
+   font-size: 14px;
+  line-height: 1.5;
+}
+.title{
   color: #fff;
 }
 .start__title {
-  text-align: center;
   font-size: 24px;
   font-weight: 700;
   line-height: 1.5;
 }
-.text {
-  color: #999;
-}
-.start__text {
-  text-align: center;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.5;
-}
 .btn {
+  color: #fff;
+  font-weight: 600;
+  line-height: 1.5;
   border-radius: 8px;
   background: #e50000;
-  color: #fff;
 }
 .start__btn {
-  padding: 14px 20px;
+  position: relative;
+  z-index: 4;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
   font-size: 14px;
-} 
+  padding: 14px 20px;
+}
 
 @media (min-width: 1440px) {
   .container {
@@ -85,7 +104,7 @@
     max-width: 1440px;
     margin: 0 auto;
     background-position: center;
-    background: url("../../../img/universal/start/Group3.png");
+    background: url("../img/universal/start/Group3.png");
   }
   .start__title {
     text-align: left;
@@ -119,7 +138,7 @@
   .start__picture {
     margin: 0 auto;
     background-position: center;
-    background: url(../../../img/universal/start/Group4.png);
+    background: url("../img/universal/start/Group4.png");
   }
   .start__title {
     font-size: 48px;
