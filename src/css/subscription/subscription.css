@@ -1,0 +1,244 @@
+.section-second {
+    padding-top: 80px;
+    background:  #141414;
+}
+
+.table__container {
+    margin: 0 auto;
+    width: 358px;
+}
+
+.container__gap__second {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.table-text-about-subscription {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.table-text-about-subscription h2 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.table-plan {
+    display: none;
+}
+
+.container-mobile {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.table-plan-basic-standart-premium-mobile {
+    padding: 8px;
+    align-items: center;
+    line-height: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 10px;
+    border: 1px solid var(--Black-15, #262626);
+    background: var(--Black-06, #0f0f0f);
+    align-items: stretch;
+}
+
+.table-plan-basic-standart-premium-mobile li {
+    display: flex;
+    padding: 12px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 100px;
+}
+
+.container-table-mobile {
+    color: white;
+    display: flex;
+    padding: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    align-self: stretch;
+    border-radius: 12px;
+    border: 1px solid var(--Black-15, #262626);
+    background: var(--Black-06, #0f0f0f);
+}
+
+.container-table-mobile-first {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    align-self: stretch;
+    flex-wrap: wrap;
+}
+
+.container-table-mobile-first p {
+    width: 140px;
+    font-weight: 500;
+}
+
+@media (min-width: 1440px) {
+    body {
+        background-color: #141414;
+    }
+    .table__container {
+        width: 1279px;
+    }
+    .text-grey {
+        line-height: 150%;
+        font-style: normal;
+        font-family: Manrope;
+        color: var(--Grey-60, #999);
+        font-weight: 500;
+    }
+
+    .section-second {
+        padding-top: 120px;
+    }
+
+    .container__gap__second {
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    table {
+        width: 1275px;
+    }
+
+    .container-mobile {
+        display: none;
+    }
+
+    .table-plan {
+        display: table;
+        width: 100%;
+        border-collapse: collapse;
+        table-layout: fixed;
+        border-radius: 10px;
+    }
+
+    th,
+    td {
+        padding: 24px;
+        border: 1px solid var(--Black-15, #262626);
+    }
+
+    .table-table-subsription {
+        color: white;
+        background-color: #0f0f0f;
+    }
+
+    .table-table-subsription th {
+        text-align: left;
+    }
+
+    .table-table-subsription-popular {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        border-radius: 2px;
+        align-items: center;
+    }
+
+    .table-table-subsription-popular span {
+        padding: 0px 6px 0px;
+        background-color: red;
+        font-family: Manrope;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%;
+    }
+}
+
+@media (min-width: 1920px) {
+    body {
+        background-color: #141414;
+    }
+    .table__container {
+        width: 1597px;
+    }
+    .text {
+        color: var(--Absolute-White, #fff);
+        font-family: Manrope;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 150%;
+    }
+
+    .text-grey {
+        line-height: 150%;
+        font-style: normal;
+        font-family: Manrope;
+        color: var(--Grey-60, #999);
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .section-second {
+        padding-top: 150px;
+    }
+
+    .container__gap__second {
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+    }
+
+    table {
+        width: 1597px;
+    }
+
+    .container-mobile {
+        display: none;
+    }
+
+    .table-plan {
+        display: table;
+        width: 100%;
+        border-collapse: collapse;
+        table-layout: fixed;
+        border-radius: 12px;
+    }
+
+    th,
+    td {
+        padding: 30px;
+        border: 1px solid var(--Black-15, #262626);
+    }
+
+    .table-table-subsription {
+        color: white;
+        background-color: #0f0f0f;
+    }
+
+    .table-table-subsription th {
+        text-align: left;
+    }
+
+    .table-table-subsription-popular {
+        display: flex;
+        align-items: flex-start;
+        gap: 8px;
+        align-items: center;
+    }
+
+    .table-table-subsription-popular span {
+        border-radius: 2px;
+        padding: 2px 10px;
+        background-color: red;
+        font-family: Manrope;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%;
+    }
+}
