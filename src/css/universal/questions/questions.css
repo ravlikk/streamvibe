@@ -1,9 +1,9 @@
 .questions {
   background-color: #141414;
 }
-.questions__container {
-  margin: 0 auto;
-  max-width: 1280px;
+.questions__container{
+  display: flex;
+  flex-direction: column;
 }
 .questions__wrapper {
   display: flex;
@@ -27,7 +27,7 @@
   font-weight: 400;
 }
 .questions-wrapper__btn {
-  width: 140px;
+  max-width: 140px;
   padding: 20px 14px;
   border-radius: 6px;
   background: #e50000;
@@ -48,13 +48,12 @@
 .questions__name {
   display: flex;
   flex-direction: column;
-  gap: 20px;
 }
 .questions__items {
   display: flex;
   gap: 12px;
   position: relative;
-  padding: 30px;
+  padding: 30px 10px;
 
   .questions__number {
     max-width: 44px;
@@ -72,7 +71,7 @@
     font-size: 18px;
     font-weight: 500;
     max-width: 240px;
-    line-height: 22px;
+    line-height: 1.5;
   }
   .questions__logo-content::after {
     content: "";
@@ -106,7 +105,10 @@
 }
 @media (min-width: 1440px) {
   .questions__container {
+    flex-direction: column;
     gap: 60px;
+    margin: 0 auto;
+    max-width: 1280px;
   }
   .questions__name {
     flex-direction: row;
@@ -116,6 +118,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding-left: 0;
   }
   .questions-wrapper__logo {
     font-size: 28px;
@@ -126,7 +129,7 @@
     color: var(--Grey-60, #999);
     font-size: 16px;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 1.5;
   }
   .questions-wrapper__btn {
     align-self: end;
@@ -160,7 +163,7 @@
   }
   .questions__items {
     flex-direction: row;
-    padding: 24px 24px 24px 0;
+    padding: 24px ;
   }
 
   .questions__number {
@@ -172,23 +175,41 @@
     align-items: center;
     white-space: nowrap;
     font-size: 20px;
-    line-height: 30px;
+    line-height: 1.5;
     font-weight: 500;
   }
 }
 @media (min-width: 1920px) {
+  .questions__container{
+    max-width: 1596px;
+    gap: 80px;
+  }
+  .questions__wrapper{
+    gap: 14px;
+  }
+  .questions-wrapper__btn{
+    padding: 18px 24px;
+  }
+  .questions__name{
+    gap: 80px;
+  }
   .questions-wrapper__logo {
     font-size: 38px;
     font-weight: 700;
     line-height: 57px;
   }
+  .questions__items{
+    padding: 30px 34px;
+    gap: 24px;
+  }
   .questions-wrapper__text {
     font-size: 18px;
     font-weight: 400;
+    line-height: 1.5;
   }
   .questions__logo-content {
     font-size: 22px;
-    line-height: 33px; /* 33px */
+    line-height: 1.5;
   }
   .questions__number{
     padding: 20px;
