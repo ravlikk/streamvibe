@@ -1,0 +1,148 @@
+footer.footer {
+  background-color: #0f0f0f;
+}
+.footer__container {
+  margin: 0 auto;
+  max-width: 358px;
+}
+.footer__contacts{
+display: flex;
+}
+.footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-self: stretch;
+}
+.footer__items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 30px;
+  align-self: stretch;
+}
+.footer__item {
+  display: flex;
+  flex-direction: column;
+  width: 179px;
+  max-width: 179px;
+  gap: 16px;
+}
+
+* {
+  padding: 0;
+}
+.footer__item > p {
+  color: #fff;
+  font-family: Manrope;
+  font-size: 16px;
+  font-weight: 600;
+
+}
+.footer-list___item {
+  color: #999;
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+
+}
+.footer__contacts {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-top: solid 1px #262626;
+}
+.content__text {
+  margin-top: 20px;
+  color: #999;
+  font-family: Manrope;
+  font-size: 14px;
+  font-weight: 400;
+}
+.content__text:last-of-type {
+  a {
+    text-align: center;
+    width: 110px;
+    border-right: 2px solid #262626;
+  }
+
+}
+.footer__list{
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+@media (min-width: 1440px) {
+  footer.footer {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .footer__container {
+    max-width: 1297px;
+  }
+  .footer__wrapper {
+    gap: 80px;
+  }
+  .footer__items {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  .footer__content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .footer__item > p {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .footer-list___item {
+    color: #999;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .footer__items{
+    gap: 20px;
+  }
+}
+@media (min-width: 1920px) {
+  footer.footer {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+  .footer__container {
+    max-width: 1525px;
+  }
+  .footer__items{
+    gap: 30px;
+  }
+  .footer__wrapper {
+    gap: 100px;
+  }
+  .footer__items {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  .footer__content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .footer__item > p {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .footer-list___item {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .content__text {
+    font-size: 18px;
+    font-weight: 400;
+  }
+}
