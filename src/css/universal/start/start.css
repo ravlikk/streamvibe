@@ -126,6 +126,7 @@
   }
 
   .start__container {
+    border: 5px solid #262626;
     max-width: 1646px;
     padding: 100px 80px;
     background-image: url(../img/universal/start/Group4.png);
