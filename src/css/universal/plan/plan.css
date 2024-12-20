@@ -58,6 +58,7 @@ section {
 }
 
 .plan-text-month-or-year {
+  padding: 8px;
   border-radius: 8px;
   border: 1px solid #262626;
   align-items: center;
