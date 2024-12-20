@@ -119,12 +119,11 @@ section{
   background: var(--Red-45, #e50000);
 }
 
-@media (min-width: 1439px) {
+@media (min-width: 1440px) {
   section{
     display: flex;
   }
   .plan__container {
-    margin: 0 auto;
     width: 1280px;
   }
   .container__gap {
@@ -233,7 +232,7 @@ section{
     background: var(--Red-45, #e50000);
   }
 }
-@media (min-width: 1921px) {
+@media (min-width: 1920px) {
   section {
     display: flex;
     flex-direction: column;
@@ -241,7 +240,6 @@ section{
     gap: 80px;
   }
   .plan__container {
-    margin: 0 auto;
     width: 1596px;
   }
   .plan-text {
