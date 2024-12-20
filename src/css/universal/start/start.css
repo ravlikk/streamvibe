@@ -1,0 +1,146 @@
+.start {
+  background: #141414;
+  padding-block: 80px;
+}
+
+.start__container {
+  display: flex;
+  max-width: 358px;
+  margin: 0 auto;
+  padding: 50px 30px;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 12px;
+  border: 3px solid #262626;
+  background: #0f0f0f;
+  position: relative;
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../img/universal/start/Group2.png);
+}
+
+.start__container::after {
+  border-radius: 12px;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg,
+      rgba(15, 15, 15, 1) 0%,
+      rgba(20, 15, 15, 1) 35%,
+      rgba(34, 14, 14, 0.9) 65%,
+      rgba(229, 0, 0, 0.30024509803921573) 100%);
+}
+
+.start__box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 3;
+  margin-bottom: 50px;
+}
+
+.start__title {
+  color: #fff;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.5;
+  padding-inline: 20px;
+}
+
+.text {
+  color: #999;
+}
+
+.start__text {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.btn {
+  color: #fff;
+  font-weight: 600;
+  line-height: 1.5;
+  border-radius: 8px;
+  background: #e50000;
+}
+
+.start__btn {
+  z-index: 3;
+  font-size: 14px;
+  padding: 14px 20px;
+}
+
+@media (min-width: 1440px) {
+  .start {
+    padding-block: 113px;
+  }
+
+  .start__container {
+    padding: 80px 60px;
+    max-width: 1283px;
+    display: flex;
+    flex-direction: row;
+    background-image: url(../img/universal/start/Group3.png);
+    justify-content: space-between;
+  }
+
+  .start__container::after {
+    background: linear-gradient(90deg,
+        rgba(15, 15, 15, 1) 0%,
+        rgba(20, 15, 15, 1) 20%,
+        rgba(34, 14, 14, 0.9) 75%,
+        rgba(229, 0, 0, 0.30024509803921573) 100%);
+  }
+
+  .start__box {
+    margin-bottom: 0px;
+  }
+
+  .start__title {
+    text-align: left;
+    font-size: 28px;
+    padding-inline: 0;
+  }
+
+  .start__text {
+    text-align: left;
+    font-size: 16px;
+  }
+
+  .start__btn {
+    padding: 18px 24px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .start {
+    padding-block: 135px;
+  }
+
+  .start__container {
+    border: 5px solid #262626;
+    max-width: 1646px;
+    padding: 100px 80px;
+    background-image: url(../img/universal/start/Group4.png);
+  }
+
+  .start__title {
+    font-size: 48px;
+  }
+
+  .start__text {
+    font-size: 18px;
+  }
+
+  .start__btn {
+    font-size: 18px;
+  }
+}
