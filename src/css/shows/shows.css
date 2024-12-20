@@ -1,5 +1,5 @@
 .play-show {
-  padding-block: 30px;
+  
   background: #141414;
 }
 .play-show__container {
@@ -19,17 +19,7 @@
   background-size: cover;
   background-image: url(../img/play-show/playy.jpg);
 }
-.play-show__bac {
-  border-radius: 12px;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  z-index: -2;
-  object-fit: cover;
-  background-repeat: no-repeat;
-}
+
 .play-show__container::after {
   position: absolute;
   border-radius: 12px;
@@ -42,6 +32,7 @@
 }
 .play-show__title {
   z-index: 3;
+  color: #fff;
   text-align: center;
   font-size: 24px;
   font-weight: 700;
@@ -73,14 +64,8 @@
   justify-content: center;
   gap: 4px;
 }
-.icon {
-  padding: 12px;
-  background: #000000;
-  border: 1px solid #262626;
-  border-radius: 8px;
-}
-.play-show__button__play__img {
-  padding: 12px;
+.play-show__icons {
+
 }
 
 @media (min-width: 1440px) {
