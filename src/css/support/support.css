@@ -1,17 +1,207 @@
 .welcome {
   background-color: Black;
 }
-
+.welcome__container {
+  margin: 0 auto;
+  max-width: 370px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.container__title {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 .welcome-title__text {
+  width: 357px;
   font-family: Manrope;
   font-size: 28px;
   font-weight: 700;
   text-align: left;
   color: #ffffff;
+  line-height: 42px;
 }
 .welcome__text {
+  width: 357px;
   color: #999;
   font-family: Manrope;
   font-size: 14px;
   font-weight: 400;
+  line-height: 21px;
+}
+.welcome__container-img {
+  border: 6px solid #262626;
+  border-radius: 4px;
+}
+.welcome__form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 10px;
+  border: 1px solid #262626;
+  background: #0f0f0f;
+  padding: 24px;
+}
+.welcome-form__container-input {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.welcome-form__title-input {
+  color: #fff;
+  font-family: Manrope;
+  font-size: 16px;
+  font-weight: 600;
+}
+.welcome-form__input {
+  border-radius: 6px;
+  border: 1px solid #262626;
+  background: #141414;
+  padding: 16px;
+}
+.welcome-form__container-phone {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.welcome__container-select {
+  display: flex;
+  gap: 12px;
+  input {
+    width: 245px;
+  }
+}
+.welcome__container-select::after {
+  content: "";
+  position: absolute;
+  transform: translate(45px, 20px);
+  width: 12px; /* Размер стрелки */
+  height: 12px;
+  background-image: url("../img/icon/arow.svg"); /* Кастомная стрелка */
+  background-size: contain;
+  background-repeat: no-repeat;
+  pointer-events: none; /* Чтобы стрелка не мешала клику на селект */
+}
+.welcome-form__select {
+  width: 60px;
+  height: 53px;
+  appearance: none;
+  border-radius: 6px;
+  border: 1px solid #262626;
+  background: #141414 url("../img/support/welcome/india.svg") no-repeat 4px;
+}
+
+.welcome__textarea {
+  border-radius: 6px;
+  border: 1px solid #262626;
+  background: #141414;
+  resize: none;
+  height: 77px;
+  padding: 16px;
+}
+.welcome-form__container-checkbox {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.welcome-form__container-text {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+.welcome__text-agree {
+  color: #999;
+  font-family: Manrope;
+  font-size: 16px;
+  font-weight: 400;
+  width: 277px;
+}
+.welcome-form__btn {
+  border-radius: 6px;
+  background: #e50000;
+  padding: 14px 20px;
+  color: #fff;
+}
+.t input {
+  display: none; /* <--скрываем дефолтный чекбокс */
+}
+.t span {
+  /* <-- стилизируем новый */
+  height: 24px;
+  width: 24px;
+  border: 1px solid #262626;
+  display: inline-block;
+  position: relative;
+  background-color: black;
+  border-radius: 4px;
+  padding: 3px;
+}
+[type="checkbox"]:checked + span:before {
+  /* <-- ставим иконку, когда чекбокс включен  */
+  content: "\2714";
+  font-size: 23px;
+  color: green;
+}
+@media (min-width: 1440px) {
+  /*  */
+  .welcome__form {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 40px;
+    width: 810px;
+  }
+  .welcome__container{
+    max-width: 1280px;
+    flex-direction: row;
+  }
+  .welcome-form__input {
+    width: 350px;
+  }
+  .welcome__textarea {
+    width: 720px;
+    height: 129px;
+  }
+  .welcome__text-agree {
+    width: 480px;
+  }
+  .inp .welcome-form__container-checkbox {
+    max-height: 24px;
+  }
+  .welcome-form__btn {
+    width: 188px;
+  }
+  .welcome__container-select {
+    input {
+      width: 276px;
+    }
+  }
+  .welcome-form__container-checkbox {
+    flex-direction: row;
+  }
+  .welcome-form__container-text {
+    align-self: center;
+  }
+}
+@media (min-width: 1920px) {
+  .welcome-title__text {
+    font-size: 48px;
+    font-weight: 700;
+  }
+  .welcome__text {
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .welcome-form__title-input {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px; /* 27px */
+  }
+  
 }
