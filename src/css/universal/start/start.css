@@ -53,29 +53,23 @@
   padding-inline: 20px;
 }
 
-.text {
-  color: #999;
-}
-
 .start__text {
   text-align: center;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.5;
-}
-
-.btn {
-  color: #fff;
-  font-weight: 600;
-  line-height: 1.5;
-  border-radius: 8px;
-  background: #e50000;
+  color: #999;
 }
 
 .start__btn {
   z-index: 3;
   font-size: 14px;
   padding: 14px 20px;
+  color: #fff;
+  font-weight: 600;
+  line-height: 1.5;
+  border-radius: 8px;
+  background: #e50000;
 }
 
 @media (min-width: 1440px) {
