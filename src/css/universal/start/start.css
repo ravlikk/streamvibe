@@ -81,6 +81,7 @@
     padding: 80px 60px;
     width: 1283px;
     display: flex;
+  z-index: 5;
     flex-direction: row;
     background-image: url(/img/universal/start/start-background1440px.png);
     justify-content: space-between;
