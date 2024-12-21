@@ -17,7 +17,7 @@
   overflow: hidden;
   background-position: center;
   background-size: cover;
-  background-image: url(../img/universal/start/Group2.png);
+  background-image: url(../img/universal/start/start-background390px.png);
 }
 
 .start__container::after {
@@ -82,7 +82,7 @@
     width: 1283px;
     display: flex;
     flex-direction: row;
-    background-image: url(../img/universal/start/Group3.png);
+    background-image: url(../img/universal/start/start-background1440xpx.png);
     justify-content: space-between;
   }
 
@@ -123,7 +123,7 @@
     border: 5px solid #262626;
     width: 1646px;
     padding: 100px 80px;
-    background-image: url(../img/universal/start/Group4.png);
+    background-image: url(../img/universal/start/start-background1920px.png);
   }
 
   .start__title {
