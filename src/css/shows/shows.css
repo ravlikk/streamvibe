@@ -58,7 +58,7 @@
 
 .play-show__btn {
   border-radius: 8px;
-  background: #E50000;
+  background: #e50000;
   color: #fff;
   width: 100%;
   font-size: 14px;
@@ -123,3 +123,54 @@
     font-size: 18px;
   }
 }
+
+.description-show__container {
+  width: 358px;
+  margin: 0 auto;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border-radius: 10px;
+  border: 1px solid #262626;
+  background: #1a1a1a;
+}
+.description-show__title {
+  color: #999;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.description-show__text {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+@media (min-width: 1440px) {
+  .description-show__container {
+    width: 850px;
+    gap: 10px;
+    padding: 40px;
+  }
+  .description-show__title {
+    font-size: 16px;
+  }
+  .description-show__text {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1920px) {
+    .description-show__container {
+      width: 1062px;
+      gap: 14px;
+      padding: 50px;
+    }
+    .description-show__title {
+      font-size: 18px;
+    }
+    .description-show__text {
+      font-size: 18px;
+    }
+  }
