@@ -10,7 +10,7 @@ export default defineConfig({
     target: ["es2022", "chrome89", "firefox89", "safari15"],
     rollupOptions: {
       input: {
-        main: resolve(__dirname, "index.html"),
+        main: resolve(__dirname, "src/index.html"),
         nestedTwo: resolve(__dirname, "src/movies-shows.html"),
         nestedFour: resolve(__dirname, "src/movies.html"),
         nestedFive: resolve(__dirname, "src/shows.html"),
