@@ -188,8 +188,7 @@
     width: 60px;
   }
   .welcome-form__btn {
-    padding: 20px;
-    width: 100%;
+    padding: 10px 25px;
   }
   .welcome__container-select {
     flex-direction: row;
