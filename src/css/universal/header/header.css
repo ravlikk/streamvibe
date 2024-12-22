@@ -1,0 +1,153 @@
+header {
+  background-color: #141414;
+}
+
+.header__container {
+  margin: 0 auto;
+  width: 357px;
+}
+
+.haeder__wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  padding: 40px 0px 14px 0px;
+}
+
+.header-buttons-container {
+  display: none;
+}
+
+.header-buttons-pc {
+  display: none;
+}
+
+.header-last-button {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 6px;
+  border: 3px solid var(--Black-15, #262626);
+  background: var(--Black-10, #1a1a1a);
+}
+
+@media (min-width: 1440px) {
+  header {
+    display: flex;
+    padding: 24px 0px 24px 0;
+  }
+
+  .header__container {
+    margin: 0 auto;
+    width: 1280px;
+  }
+
+  .haeder__wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .header__menu {
+    display: none;
+  }
+
+  .header-logo-text {
+    width: 166px;
+    height: 50px;
+  }
+
+  .text {
+    color: #fff;
+    line-height: 150%;
+    font-family: Manrope;
+  }
+
+  .header-buttons-container {
+    display: flex;
+    padding: 8px 8px 8px 30px;
+    align-items: center;
+    gap: 16px;
+    border-radius: 12px;
+    border: 4px solid #1f1f1f;
+    background: #0f0f0f;
+    font-size: 18px;
+  }
+
+  .header-buttons-pc {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .header-buttons-pc-first {
+    width: 24px;
+    height: 24px;
+  }
+
+  .header-buttons-pc-second {
+    width: 24px;
+    height: 24px;
+  }
+
+  .header-last-button {
+    display: none;
+  }
+}
+
+@media (min-width: 1920px) {
+  header {
+    display: flex;
+    padding: 30px 0px 100px;
+  }
+
+  .header__container {
+    margin: 0 auto;
+    width: 1597px;
+  }
+
+  .haeder__wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .container-logo-image-second {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .text {
+    color: #fff;
+    line-height: 1.5;
+    font-family: Manrope;
+  }
+
+  .header-buttons-container {
+    display: flex;
+    padding: 15px 15px 15px 40px;
+    align-items: center;
+    gap: 30px;
+    border-radius: 12px;
+    border: 4px solid #1f1f1f;
+    background: #0f0f0f;
+    font-size: 18px;
+  }
+
+  .header-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header-buttons-pc {
+    display: flex;
+    gap: 30px;
+  }
+}
