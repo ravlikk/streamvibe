@@ -1,54 +1,58 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="/src/css/movies-shows/movies-shows.css"
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-
-    <body class="body">
-        <div class="body__cont">
-        <main>
-          
-            <div class="play-now">
+<section class="play-now">
+    <div class="play-now__container">
+            <picture class="play-now-image">
+                <source srcset="/img/play-now/play-desktop.png" media="(min-width: 1920px)">
+                <source srcset="/img/play-now/play-laptop.png"  media="(min-width: 1440px)">
+                <source srcset="/img/play-now/play.png" media="(max-width: 1439px)">
+                <img src="./img/play-now/play.png" alt="" >
+            </picture>
                
-                <picture class="play-now__image">
-                    <source srcset="main.png"
-                    media="()"
-                    >
-                    <img src="./main.png" alt="" >
-                    
-                   </picture>
-                   <div class="play-now__cont">
-                    <p class="play-now__text">Avengers : Endgame</p>
-                    <button class="play-now__play">
-                       <div class="play-now__play__cont">
-                        <img src="./svg.svg" alt="">
-                            Play Now
-                       </div>
-                            
+           
+               
+            <div class="play-now__text-container">
+                <p class="play-now__text">Avengers : Endgame</p>
+                <p class="play-now__text__one">With the help of remaining allies, the Avengers must assemble once more in order to undo Thanos's actions and undo the chaos to the universe, no matter what consequences may be in store, and no matter who they face... Avenge the fallen.</p>
+            </div>
+          
+            <div class="play-now__elements">
+                <div class="play-now__al-button-container">
+                    <button class="play-now__button">
+                        <div class="play-now__button__container">
+                            <img src="./img/icon/play.svg" alt="">
+                        <p>Play Now</p>
+                        </div>
                     </button>
-                    
-                    <div class="play-now__button-cont">
-                        <button class="play-now__button-cont__one">
-                            <img src="./Icon.svg" alt="">
+                    <div class="play-now__svg__container">
+                        <button class="play-now__svg__container__one">
+                            <img src="./img/icon/plus.svg" alt="">
                         </button>
-                        <button class="play-now__button-cont__two">
-                            <img src="./Icon (2).svg" alt="">
+                        <button class="play-now__svg__container__two">
+                            <img src="./img/icon/like.svg" alt="">
                         </button>
-                        <button class="play-now__button-cont__three">
-                            <img src="./Icon (3).svg" alt="">
+                        <button class="play-now__svg__container__three">
+                            <img src="./img/icon/volume.svg" alt="">
                         </button>
-                        
-                    
-                    
-            </div>
-                   </div>
-                    
+                </div>
               
+                </div>
+                <div class="play-now__nav-container">
+                    <button class="play-now__nav-container__one">
+                        <img src="./img/icon/arrow-left.svg" alt="">
+                    </button>
+                    <div class="play-now__nav-container__indicator-container">
+                        <div class="play-now__nav-container__indicator-container__one"></div>
+                        <div class="play-now__nav-container__indicator-container__two"></div>
+                        <div class="play-now__nav-container__indicator-container__three"></div>
+                        <div class="play-now__nav-container__indicator-container__four"></div>
+                        <div class="play-now__nav-container__indicator-container__five"></div>
+                    </div>
+                    <button class="play-now__nav-container__two">
+                        <img src="./img/icon/arrow-right.svg" alt="">
+                    </button>
+                </div>
             </div>
-
-</body>
-</html>
+         
+    </div>
+</section>
+        
+ 
