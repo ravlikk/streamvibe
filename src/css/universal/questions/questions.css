@@ -106,7 +106,7 @@
     line-height: 1.5;
   }
 
-  .questions__list> :nth-last-child(-n+4) {
+  .questions__list ul> :nth-last-child(-n+4) {
     display: flex;
   }
 
