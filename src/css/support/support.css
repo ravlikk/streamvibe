@@ -203,7 +203,7 @@
     padding: 20px 0;
   }
   .welcome-form__container-text {
-    align-self: center;
+    align-self: center; 
   }
 }
 @media (min-width: 1920px) {
