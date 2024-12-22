@@ -25,7 +25,7 @@ background: linear-gradient(0deg, #141414 0%, rgba(20, 20, 20, 0.00) 100%), url(
     align-items: center;
     gap: 2px;
     align-self: stretch;
-    color: var(--Absolute-White, SX#FFF);
+    color: var(--Absolute-White, #FFF);
     text-align: center;
     font-family: Manrope;
     font-size: 30px;
@@ -69,7 +69,7 @@ display: flex;
 padding: 14px 24px;
 align-items: center;
 gap: 4px;
-color: var(--Absolute-White, #FFF);
+color: var(--Absolute-White,#FFF);
 font-family: Manrope;
 font-size: 18px;
 font-style: normal;
