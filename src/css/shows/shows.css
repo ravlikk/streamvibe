@@ -1,0 +1,141 @@
+.play-show {
+  background: #141414;
+}
+
+.play-show__container {
+  gap: 20px;
+  position: relative;
+  width: 358px;
+  display: flex;
+  padding: 276px 24px 16px 24px;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0 auto;
+  border-radius: 12px;
+  border: 1px solid #262626;
+  border-bottom: 0px;
+  background-position: center;
+  background-size: cover;
+  background-image: url(/img/play-show/playy.jpg);
+}
+
+.play-show__container::after {
+  position: absolute;
+  border-radius: 12px;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, #141414 0%, rgba(20, 20, 20, 0) 100%);
+}
+
+.play-show__wrapper {
+  display: flex;
+  flex-direction: column;
+  z-index: 3;
+}
+
+.play-show__title {
+  color: #fff;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.play-show__text {
+  display: none;
+}
+
+.play-show__box {
+  z-index: 3;
+  width: 100%;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.play-show__btn {
+  border-radius: 8px;
+  background: #E50000;
+  color: #fff;
+  width: 100%;
+  font-size: 14px;
+  line-height: 1.2;
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.play-show__icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+@media (min-width: 1440px) {
+  .play-show__container {
+    display: flex;
+    width: 1280px;
+    padding-top: 522px;
+    gap: 24px;
+  }
+
+  .play-show__title {
+    font-size: 30px;
+    line-height: 1.6;
+  }
+
+  .play-show__text {
+    color: #999;
+    display: block;
+    line-height: 1.5;
+    font-size: 16px;
+    padding-inline: 130px;
+    text-align: center;
+  }
+
+  .play-show__box {
+    flex-direction: row;
+    width: auto;
+    gap: 20px;
+  }
+
+  .play-show__icons {
+    gap: 8px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .play-show__container {
+    width: 1594px;
+    padding: 641px 0 20px 0;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .play-show__title {
+    font-size: 38px;
+  }
+
+  .play-show__icons {
+    gap: 10px;
+  }
+.play-show__icons img{
+  width: 56px;
+  height: 56px;
+}
+  .play-show__btn {
+    padding: 14px 24px;
+    font-size: 18px;
+  }
+
+  .play-show__text {
+    font-size: 18px;
+  }
+}

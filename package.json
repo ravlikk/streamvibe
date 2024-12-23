@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node src/index.js",
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build --base=/streamvibe/",
     "preview": "vite preview"
   },
   "devDependencies": {
