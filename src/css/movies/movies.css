@@ -141,12 +141,10 @@ align-items: flex-start;
 
 .voice-button{
     background: #0F0F0F;
-    border: transparent;
+    
     border-radius: 8px;
 border: 1px solid var(--Black-15, #262626);
 background: var(--Black-06, #0F0F0F);
-
-
 }
 
 .voice-icon{
@@ -155,4 +153,5 @@ background: var(--Black-06, #0F0F0F);
     display: flex;
 padding: 14px;
 align-items: flex-start;
+border: transparent;
 }
