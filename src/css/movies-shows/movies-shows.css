@@ -185,6 +185,7 @@
     }
 
     .play-now__wrapper {
+        padding-top: 508px;
         gap: 30px;
         padding-inline: 150px;
     }
