@@ -1,6 +1,6 @@
 .section-second {
     padding-top: 80px;
-    background:  #141414;
+    background: #141414;
 }
 
 .table__container {
@@ -88,9 +88,14 @@
     body {
         background-color: #141414;
     }
+
+    .table-text-about-subscription h2 {
+        font-size: 38px;
+    }
     .table__container {
         width: 1279px;
     }
+
     .text-grey {
         line-height: 150%;
         font-style: normal;
@@ -162,8 +167,12 @@
     body {
         background-color: #141414;
     }
+
     .table__container {
         width: 1597px;
+    }
+    .table-text-about-subscription h2 {
+        font-size: 48px;
     }
     .text {
         color: var(--Absolute-White, #fff);
