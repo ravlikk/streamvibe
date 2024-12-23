@@ -1,0 +1,321 @@
+
+.welcome {
+  background: #141414;
+
+}
+
+.welcome__container {
+  margin: 0 auto;
+  width: 357px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+}
+
+.welcome__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.welcome__wrapper div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.welcome__title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.5;
+}
+
+.welcome__text {
+  color: #999;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.welcome__img {
+  outline: 6px solid #262626;
+  border-radius: 4px;
+  background: #0F0F0F;
+}
+
+.welcome__form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 10px;
+  border: 1px solid #262626;
+  background: #0f0f0f;
+  padding: 24px;
+}
+
+.welcome-form__container-input {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.welcome-form__title-input {
+  color: #fff;
+  font-family: Manrope;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.welcome-form__input {
+  border-radius: 6px;
+  border: 1px solid #262626;
+  background: #141414;
+  padding: 16px;
+}
+
+.welcome-form__container-phone {
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.welcome__container-select {
+  display: flex;
+  gap: 12px;
+
+  input {
+    width: 100%;
+  }
+}
+
+.welcome__container-select::after {
+  content: "";
+  position: absolute;
+  transform: translate(45px, 20px);
+  width: 12px;
+  height: 12px;
+  background-image: url("../img/icon/arow.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  pointer-events: none;
+}
+
+.welcome-form__select {
+  width: 80px;
+  appearance: none;
+  border-radius: 6px;
+  border: 1px solid #262626;
+  background: #141414 url("../img/support/welcome/india.svg") no-repeat 4px;
+}
+
+.welcome__textarea {
+  border-radius: 6px;
+  border: 1px solid #262626;
+  background: #141414;
+  resize: none;
+  padding: 16px;
+  height: 109px;
+}
+
+.welcome-form__container-checkbox {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.welcome-form__container {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.welcome__text-agree {
+  color: #999;
+  font-size: 16px;
+}
+
+.welcome-form__btn {
+  border-radius: 6px;
+  background: #e50000;
+  padding: 14px 20px;
+  color: #fff;
+}
+
+.t input {
+  display: none;
+}
+
+.t span {
+  height: 24px;
+  width: 24px;
+  border: 1px solid #262626;
+  display: inline-block;
+  position: relative;
+  background-color: black;
+  border-radius: 4px;
+  padding: 3px;
+}
+
+[type="checkbox"]:checked+span:before {
+  content: "\2714";
+  font-size: 23px;
+  color: green;
+}
+
+@media (min-width: 1440px) {
+  .welcome {
+    padding-bottom: 120px;
+  }
+
+  .welcome__form>div {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+  }
+
+  .welcome__form {
+    width: 100%;
+    padding: 40px;
+
+  }
+
+  .welcome__container-select::after {
+    transform: translate(60px, 20px);
+  }
+
+  .container {
+    justify-content: end;
+  }
+
+  .welcome__container {
+    width: 1280px;
+    flex-direction: row;
+  }
+
+  .welcome-form__input {
+    width: 350px;
+  }
+
+  .welcome-title__text {
+    line-height: 1.5;
+  }
+
+  .welcome__text {
+    line-height: 1.9;
+  }
+
+  .welcome__textarea {
+    width: 720px;
+    height: 129px;
+  }
+
+  .welcome__text-agree {
+    width: 480px;
+  }
+
+  .welcome-form__select {
+    width: 78px;
+    background: url(../img/support/welcome/india.svg) 12px no-repeat;
+  }
+
+  .welcome-form__btn {
+    padding: 14px 20px;
+  }
+
+  .welcome__container-select {
+    flex-direction: row;
+
+    input {
+      width: 260px;
+    }
+  }
+
+  .welcome-form__container-checkbox {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .welcome-form__container {
+    padding-block: 12.5px;
+  }
+
+  .welcome-form__container-text {}
+}
+
+@media (min-width: 1920px) {
+  .welcome {
+    padding-bottom: 150px;
+  }
+
+  .welcome__container {
+    width: 1589px;
+    gap: 80px;
+
+  }
+
+  .welcome-title__text {
+    font-size: 48px;
+    font-weight: 700;
+  }
+
+  .welcome__form {
+    padding: 55px;
+    gap: 55px;
+  }
+
+  .welcome__title {
+    font-size: 48px;
+  }
+
+  .welcome__form div {
+    justify-content: space-between;
+  }
+
+  .welcome-form__container-input {
+    gap: 16px;
+  }
+
+  .welcome-form__title-input {
+    font-size: 18px;
+  }
+
+  .welcome-form__input {
+    width: 413px;
+    height: 67px;
+  }
+
+  .welcome__container-select {
+    input {
+      width: 323px;
+    }
+
+  }
+
+  .welcome__wrapper div {
+    gap: 14px;
+  }
+
+
+  .welcome__textarea {
+    width: 876px;
+    height: 163px;
+    padding: 20px;
+  }
+
+  .welcome__text {
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  .welcome-form__container {
+    padding-block: 18px;
+  }
+
+  .welcome-form__btn {
+    padding: 18px 24px;
+    font-size: 18px;
+  }
+}
