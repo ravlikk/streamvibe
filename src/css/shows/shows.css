@@ -126,10 +126,10 @@
   .play-show__icons {
     gap: 10px;
   }
-.play-show__icons img{
-  width: 56px;
-  height: 56px;
-}
+  .play-show__icons img {
+    width: 56px;
+    height: 56px;
+  }
   .play-show__btn {
     padding: 14px 24px;
     font-size: 18px;
