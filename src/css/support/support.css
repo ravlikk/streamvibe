@@ -1,46 +1,48 @@
 .welcome {
-  background-color: Black;
- 
+  background: #141414;
+
 }
+
 .welcome__container {
   margin: 0 auto;
-  max-width: 370px;
+  width: 357px;
   display: flex;
   flex-direction: column;
   gap: 50px;
-  
+  align-items: center;
 }
-.container {
+
+.welcome__wrapper {
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
-.container__title {
+
+.welcome__wrapper div {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.welcome-title__text {
-  max-width: 357px;
-  font-family: Manrope;
+
+.welcome__title {
   font-size: 28px;
   font-weight: 700;
-  text-align: left;
   color: #ffffff;
-  line-height: 42px;
+  line-height: 1.5;
 }
+
 .welcome__text {
-  max-width: 357px;
   color: #999;
-  font-family: Manrope;
   font-size: 14px;
-  font-weight: 400;
-  line-height: 21px;
+  line-height: 1.5;
 }
-.welcome__container-img {
-  border: 6px solid #262626;
+
+.welcome__img {
+  outline: 6px solid #262626;
   border-radius: 4px;
+  background: #0F0F0F;
 }
+
 .welcome__form {
   display: flex;
   flex-direction: column;
@@ -50,47 +52,55 @@
   background: #0f0f0f;
   padding: 24px;
 }
+
 .welcome-form__container-input {
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
+
 .welcome-form__title-input {
   color: #fff;
   font-family: Manrope;
   font-size: 16px;
   font-weight: 600;
 }
+
 .welcome-form__input {
   border-radius: 6px;
   border: 1px solid #262626;
   background: #141414;
   padding: 16px;
 }
+
 .welcome-form__container-phone {
-  
+
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
+
 .welcome__container-select {
   display: flex;
   gap: 12px;
+
   input {
     width: 100%;
   }
 }
+
 .welcome__container-select::after {
   content: "";
   position: absolute;
   transform: translate(45px, 20px);
-  width: 12px; /* Размер стрелки */
+  width: 12px;
   height: 12px;
-  background-image: url("../img/icon/arow.svg"); /* Кастомная стрелка */
+  background-image: url("../img/icon/arow.svg");
   background-size: contain;
   background-repeat: no-repeat;
-  pointer-events: none; /* Чтобы стрелка не мешала клику на селект */
+  pointer-events: none;
 }
+
 .welcome-form__select {
   width: 80px;
   appearance: none;
@@ -105,36 +115,38 @@
   background: #141414;
   resize: none;
   padding: 16px;
+  height: 109px;
 }
+
 .welcome-form__container-checkbox {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.welcome-form__container-text {
-  
+
+.welcome-form__container {
   display: flex;
-  flex-direction: row;
   gap: 8px;
+  align-items: center;
 }
+
 .welcome__text-agree {
   color: #999;
-  font-family: Manrope;
   font-size: 16px;
-  font-weight: 400;
-
 }
+
 .welcome-form__btn {
   border-radius: 6px;
   background: #e50000;
   padding: 14px 20px;
   color: #fff;
 }
+
 .t input {
-  display: none; /* <--скрываем дефолтный чекбокс */
+  display: none;
 }
+
 .t span {
-  /* <-- стилизируем новый */
   height: 24px;
   width: 24px;
   border: 1px solid #262626;
@@ -144,123 +156,165 @@
   border-radius: 4px;
   padding: 3px;
 }
-[type="checkbox"]:checked + span:before {
-  /* <-- ставим иконку, когда чекбокс включен  */
+
+[type="checkbox"]:checked+span:before {
   content: "\2714";
   font-size: 23px;
   color: green;
 }
+
 @media (min-width: 1440px) {
-  .welcome{
+  .welcome {
     padding-bottom: 120px;
   }
-  .welcome__form {
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 40px;
+
+  .welcome__form>div {
     width: 100%;
+    display: flex;
+    gap: 20px;
   }
-  .container{
+
+  .welcome__form {
+    width: 100%;
+    padding: 40px;
+
+  }
+
+  .welcome__container-select::after {
+    transform: translate(60px, 20px);
+  }
+
+  .container {
     justify-content: end;
   }
-  .welcome__container{
-    max-width: 1280px;
+
+  .welcome__container {
+    width: 1280px;
     flex-direction: row;
   }
+
   .welcome-form__input {
     width: 350px;
   }
-  .welcome-title__text{
+
+  .welcome-title__text {
     line-height: 1.5;
   }
-  .welcome__text{
+
+  .welcome__text {
     line-height: 1.9;
   }
- 
+
   .welcome__textarea {
     width: 720px;
     height: 129px;
   }
+
   .welcome__text-agree {
     width: 480px;
   }
-  .welcome-form__select{
-    width: 60px;
+
+  .welcome-form__select {
+    width: 78px;
+    background: url(../img/support/welcome/india.svg) 12px no-repeat;
   }
+
   .welcome-form__btn {
-    padding: 10px 25px;
+    padding: 14px 20px;
   }
+
   .welcome__container-select {
     flex-direction: row;
+
     input {
-      width: 253px;
+      width: 260px;
     }
   }
+
   .welcome-form__container-checkbox {
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    padding: 20px 0;
   }
-  .welcome-form__container-text {
-    align-self: center; 
+
+  .welcome-form__container {
+    padding-block: 12.5px;
   }
+
+  .welcome-form__container-text {}
 }
+
 @media (min-width: 1920px) {
-  .welcome{
+  .welcome {
     padding-bottom: 150px;
   }
-  .welcome__container{
-    max-width: 1589px;
+
+  .welcome__container {
+    width: 1589px;
     gap: 80px;
-    
+
   }
+
   .welcome-title__text {
-    
     font-size: 48px;
     font-weight: 700;
   }
-  .welcome__form{
-    gap: 22px;
+
+  .welcome__form {
+    padding: 55px;
+    gap: 55px;
+  }
+
+  .welcome__title {
+    font-size: 48px;
+  }
+
+  .welcome__form div {
+    justify-content: space-between;
+  }
+
+  .welcome-form__container-input {
+    gap: 16px;
+  }
+
+  .welcome-form__title-input {
+    font-size: 18px;
+  }
+
+  .welcome-form__input {
+    width: 413px;
+    height: 67px;
+  }
+
+  .welcome__container-select {
+    input {
+      width: 323px;
+    }
 
   }
-  .welcome-form__container-input{
-    width: 482px;
-    input{
-      width: 100%;
-    }
+
+  .welcome__wrapper div {
+    gap: 14px;
   }
-  .welcome-form__select{
-    width: 60px;
+
+
+  .welcome__textarea {
+    width: 876px;
+    height: 163px;
+    padding: 20px;
   }
+
   .welcome__text {
     font-size: 18px;
     font-weight: 400;
   }
-  
-  .welcome__container-select{
-    .welcome-form__input{
-      width: 409px;
-    }
-  }
-  .welcome-form__title-input {
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 1.5; /* 27px */
-  }
-  .welcome-form__container-checkbox{
-    width: 100%;
-    padding: 30px 0;
 
-    
+  .welcome-form__container {
+    padding-block: 18px;
   }
-  .welcome__textarea{
-    width: 985px;
-  }
-  .welcome-form__btn{
-    max-width: 160px;
-  }
-  .welcome-form__select{
-    width: 60px;
+
+  .welcome-form__btn {
+    padding: 18px 24px;
+    font-size: 18px;
   }
 }
