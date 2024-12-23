@@ -178,9 +178,11 @@
   .welcome__form {
     width: 100%;
     padding: 40px;
-
+gap: 40px;
   }
-
+.welcome__title{
+  font-size: 38px;
+}
   .welcome__container-select::after {
     transform: translate(60px, 20px);
   }
