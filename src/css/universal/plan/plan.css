@@ -5,13 +5,11 @@
 .text {
   color: #fff;
   line-height: 150%;
-  font-family: Manrope;
 }
 
 .text-grey {
   line-height: 150%;
   font-style: normal;
-  font-family: Manrope;
   color: var(--Grey-60, #999);
 }
 

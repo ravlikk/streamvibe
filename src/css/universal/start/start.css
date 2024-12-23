@@ -17,7 +17,7 @@
   overflow: hidden;
   background-position: center;
   background-size: cover;
-  background-image: url(../img/universal/start/Group2.png);
+  background-image: url(/img/universal/start/start-background390px.png);
 }
 
 .start__container::after {
@@ -53,29 +53,23 @@
   padding-inline: 20px;
 }
 
-.text {
-  color: #999;
-}
-
 .start__text {
   text-align: center;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.5;
-}
-
-.btn {
-  color: #fff;
-  font-weight: 600;
-  line-height: 1.5;
-  border-radius: 8px;
-  background: #e50000;
+  color: #999;
 }
 
 .start__btn {
   z-index: 3;
   font-size: 14px;
   padding: 14px 20px;
+  color: #fff;
+  font-weight: 600;
+  line-height: 1.5;
+  border-radius: 8px;
+  background: #e50000;
 }
 
 @media (min-width: 1440px) {
@@ -87,8 +81,9 @@
     padding: 80px 60px;
     width: 1283px;
     display: flex;
+  z-index: 5;
     flex-direction: row;
-    background-image: url(../img/universal/start/Group3.png);
+    background-image: url(/img/universal/start/start-background1440px.png);
     justify-content: space-between;
   }
 
@@ -129,7 +124,7 @@
     border: 5px solid #262626;
     width: 1646px;
     padding: 100px 80px;
-    background-image: url(../img/universal/start/Group4.png);
+    background-image: url(/img/universal/start/start-background1920px.png);
   }
 
   .start__title {
