@@ -282,7 +282,7 @@
     display: block;
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1920px) {
   .season__container {
     width: 1062px;
     padding: 40px;
