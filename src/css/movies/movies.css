@@ -81,6 +81,7 @@ font-style: normal;
 font-weight: 600;
 line-height: 153%;
 border: transparent;
+white-space: nowrap;
 }
 
 .play-icon{
