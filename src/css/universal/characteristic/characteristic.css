@@ -1,0 +1,171 @@
+.characteristics__container {
+    width: 358px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    gap: 20px;
+    border-radius: 10px;
+    border: 1px solid #262626;
+    background: #1a1a1a;
+}
+
+.characteristics__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.characteristics__box {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.characteristics__text {
+    color: #999;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.characteristics__title {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.characteristics__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.characteristics__btn {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5;
+    padding: 6px 12px;
+    border-radius: 6px;
+    border: 1px solid #262626;
+    background: #141414;
+}
+
+.characteristics__case {
+    display: flex;
+    gap: 16px;
+}
+
+.characteristics__sefe {
+    width: 147px;
+    display: flex;
+    padding: 12px;
+    flex-direction: column;
+    gap: 2px;
+    border-radius: 8px;
+    border: 1px solid #262626;
+    background: #141414;
+}
+
+.characteristics__carton {
+    display: flex;
+    align-items: center;
+    gap: 1px;
+}
+
+.characteristics__canistra {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #262626;
+    background: #141414;
+}
+
+.characteristics__images {
+    border-radius: 6px;
+}
+
+@media (min-width: 1440px) {
+    .characteristics__container {
+        width: 416px;
+        padding: 40px;
+        gap: 24px;
+    }
+
+    .characteristics__wrapper {}
+
+    .characteristics__box {}
+
+    .characteristics__text {
+        font-size: 16px;
+    }
+
+    .characteristics__title {}
+
+    .characteristics__buttons {
+        gap: 7px;
+    }
+
+    .characteristics__btn {}
+
+    .characteristics__case {}
+
+    .characteristics__sefe {
+        width: 200px;
+        padding: 16px;
+    }
+
+    .characteristics__carton {
+     gap: 2px;
+    }
+
+    .characteristics__image {}
+
+    .characteristics__canistra {}
+
+    .characteristics__images {}
+}
+
+@media (min-width: 1920px) {
+    .characteristics__container {
+        width: 519px;
+        padding: 50px;
+        gap: 30px;
+    }
+
+    .characteristics__text {
+        font-size: 18px;
+    }
+
+    .characteristics__wrapper {
+        width: 419px;
+    }
+
+    .characteristics__box {}
+
+    .characteristics__title {
+        font-size: 20px;
+    }
+
+    .characteristics__buttons {}
+
+    .characteristics__btn {
+        font-size: 18px;
+    }
+
+    .characteristics__case {}
+
+    .characteristics__sefe {}
+
+    .characteristics__carton {}
+
+    .characteristics__image {}
+
+    .characteristics__canistra {}
+
+    .characteristics__images {}
+}
