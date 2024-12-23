@@ -124,6 +124,193 @@
   }
 }
 
+.season__container {
+  width: 358px;
+  margin: 0 auto;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border-radius: 10px;
+  border: 1px solid #262626;
+  background: #1a1a1a;
+}
+.season__text#hide {
+  display: none;
+}
+.season__title {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+.season__garbage {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.season__box {
+  display: flex;
+  padding: 16px 20px;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  border: 1px solid #262626;
+  background: #0f0f0f;
+}
+.season__pot {
+  display: flex;
+  justify-content: space-between;
+}
+.season__flap {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.season__subtitle {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+.season__text {
+  color: #999;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.season__btn {
+  background-color: transparent;
+}
+.season__wrapper {
+  padding: 16px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 10px;
+  border: 1px solid #262626;
+  background: #0f0f0f;
+}
+.season__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.season__item {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  border-radius: 8px;
+  background: #141414;
+}
+.season__canistra {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+}
+.season__canistra#image {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 18px;
+}
+.season__play {
+  background-color: transparent;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-100%, -50%);
+}
+.season__num {
+  color: #999;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+.season__time {
+  width: 80px;
+  display: flex;
+  padding: 6px;
+  align-items: center;
+  gap: 4px;
+  border-radius: 6px;
+  border: 1px solid #262626;
+  background: #141414;
+}
+
+@media (min-width: 1440px) {
+  .season__container {
+    width: 850px;
+    display: flex;
+    padding: 30px;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .season__title {
+    font-size: 20px;
+  }
+  .season__garbage {
+    gap: 20px;
+  }
+  .season__flap {
+    gap: 10px;
+  }
+  .season__item {
+    display: flex;
+    flex-direction: row;
+    padding: 30px 0px 40px 0px;
+    border-top: 1px solid #262626;
+    border-bottom: 1px solid #262626;
+    background: none;
+    border-radius: 0;
+    justify-content: end;
+  }
+  .season__canistra#image {
+    flex-direction: row-reverse;
+  }
+  .season__info {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .season__play {
+    transform: translate(0%, -50%);
+  }
+  .season__text#hide {
+    display: block;
+  }
+}
+@media (min-width: 1440px) {
+  .season__container {
+    width: 1062px;
+    padding: 40px;
+  }
+  .season__title {
+    font-size: 24px;
+  }
+  .season__subtitle {
+    font-size: 20px;
+  }
+  .season__text {
+    font-size: 18px;
+  }
+  .season__item {
+    padding: 40px 0px;
+    gap: 20px;
+    justify-content: start;
+  }
+  .season__num {
+    width: 60px;
+    font-size: 30px;
+  }
+  .season__time {
+    width: 100px;
+    padding: 8px 10px;
+    gap: 4px;
+  }
+}
 
 .description-show__container {
   width: 358px;
