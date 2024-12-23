@@ -361,6 +361,75 @@
   }
 }
 
+.cast-show__container {
+  width: 358px;
+  margin: 0 auto;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border-radius: 10px;
+  border: 1px solid #262626;
+  background: #1a1a1a;
+}
+.cast-show__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cast-show__text {
+  color: #999;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.cast-show__btn {
+  background-color: transparent;
+}
+
+.cast-show__images {
+  display: flex;
+  gap: 10px;
+}
+.cast-show__images#last {
+  display: none;
+}
+@media (min-width: 1440px) {
+  .cast-show__container {
+    width: 850px;
+    padding: 40px;
+    gap: 20px;
+  }
+  .cast-show__box {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 65px;
+  }
+  .cast-show__images#last {
+    display: flex;
+  }
+}
+@media (min-width: 1920px) {
+  .cast-show__container {
+    width: 1062px;
+    padding: 50px;
+    gap: 30px;
+  }
+  .cast-show__box {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 80px;
+    justify-content: center;
+  }
+  .cast-show__images {
+    gap: 30px;
+  }
+  .cast-show__images#last {
+    display: flex;
+  }
+}
+
 .reviews__container {
   width: 358px;
   margin: 0 auto;
