@@ -211,8 +211,8 @@
     padding-top: 85px;
 }
 .movies__container{
-    
-    width: 358px;
+    margin: 0 auto;
+    width: 390px;
 }
 .movies__container {
     overflow: hidden;
@@ -252,21 +252,31 @@ line-height: 150%;
 font-size: 24px;
 font-weight: 700;
 line-height: 150%;
+margin-top: 25px;
+margin-bottom: 10px;
+}
+.movies__h2-top{
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 150%;
+    margin-top: 50px;
+    margin-bottom: 20px;
 }
 .our-gener__cards{
     display: flex;
 padding: 20px;
 flex-direction: column;
-align-items: flex-start;
+
 border-radius: 10px;
 border: 1px solid #262626;
-margin: 0px 8px 0px 8px;
+
 
 }
 .our-gener__cards-cont{
     display: flex;
     flex-direction: row;
-    
+    gap: 16px;
 
 }
 .card__text{
@@ -274,7 +284,7 @@ margin: 0px 8px 0px 8px;
 font-size: 14px;
 font-weight: 600;
 line-height: 150%;
-width: 121px;
+
 }
 .card-elements{
     display: flex;
@@ -292,7 +302,7 @@ background:  #1A1A1A;
 .top-button{
     display: flex;
 padding: 8px;
-align-items: flex-start;
+
 gap: 10px;
 border-radius: 4px;
 background:#E50000;
@@ -311,17 +321,22 @@ line-height: 150%;
 }
 .top-card-elements{
     display: flex;
+    
     justify-content: space-between;
     
 }
+.movies__trending-now{
+    display: flex;
+    gap: 16px;
+}
 .now-card{
     display: flex;
-height: 259px;
+
 padding: 12px;
 flex-direction: column;
-align-items: flex-start;
+
 gap: 12px;
-flex: 1 0 0;
+
 
 border-radius: 10px;
 border: 1px solid  #262626;
@@ -348,4 +363,171 @@ font-size: 12px;
 font-style: normal;
 font-weight: 500;
 line-height: 150%;
+}
+.relias-card{
+    display: flex;
+
+padding: 12px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 12px;
+border-radius: 10px;
+border: 1px solid  #262626;
+background: #1A1A1A;
+}
+.movies__relias{
+    display: flex;
+    gap: 20px;
+}
+.must-card{
+    display: flex;
+
+padding: 12px;
+flex-direction: column;
+align-items: flex-start;
+gap: 12px;
+border-radius: 10px;
+border: 1px solid #262626;
+background: #1A1A1A;
+}
+.relias-card__cont{
+    display: flex;
+    gap: 2px;
+}
+.must-card-container{
+    display: flex;
+    gap: 16px;
+}
+.indicator-tablet{
+    display: flex;
+padding: 12px;
+align-items: center;
+gap: 2px;
+border-radius: 10px;
+border: 1px solid  #1F1F1F;
+background:  #0F0F0F;
+
+
+}
+.indicator-part{
+    
+width: 14px;
+height: 4px;
+
+
+border-radius: 20px;
+background: #333;
+}
+.indicator{
+    display: flex;
+width: 79px;
+height: 5px;
+padding-right: 59px;
+align-items: center;
+border-radius: 20px;
+background: #333;
+}
+.indicator-cont{
+    margin-top: 20px;
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 10px;
+align-self: stretch;
+}
+.indicator::before{
+    content: " ";
+    width: 20px;
+height: 5px;
+border-radius: 20px;
+background:  #E50000;
+}
+@media (min-width: 1440px) {
+    .movies__container{
+        width: 1280px;
+        display: flex;
+padding: 40px;
+flex-direction: column;
+align-items: flex-start;
+gap: 80px;
+align-self: stretch;
+border-radius: 12px;
+border: 1px solid #262626;
+    }
+    .button-container{
+        display: none;
+    }
+    .our-gener__cards-tablet{
+        display: flex;
+padding: 24px;
+flex-direction: column;
+align-items: flex-start;
+
+border-radius: 10px;
+border: 1px solid #262626;
+background: #1A1A1A;
+
+
+}
+.our-gener__cards-cont{
+    gap: 20px;
+}
+.indicator-cont{
+    display: none;
+}
+.top-container{
+    gap: 20px;
+}
+.must-card-container{
+    gap: 20px;
+}
+.movies__trending-now{
+    gap: 20px;
+}
+.movies-type{
+    display: flex;
+padding: 8px 20px;
+align-items: center;
+gap: 10px;
+border-radius: 6px;
+background: #E50000;
+color:  #FFF;
+text-align: center;
+position: relative; 
+bottom: 60px;  
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 150%;
+}
+.movies__container{
+    overflow: visible;
+}
+.movies__h2-top{
+    margin: 0px;
+    font-size: 30px;
+}
+.movies__h2{
+    
+font-size: 30px;
+
+}
+.our-gener__cards{
+    padding: 24px;
+}
+.top__cards{
+    padding: 30px;
+}
+.now-card{
+    padding: 16px;
+}
+.relias-card{
+    padding: 16px;
+}
+.must-card{
+    padding: 16px;
+}
+
 }
