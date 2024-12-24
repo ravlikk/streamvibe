@@ -211,7 +211,7 @@
     padding-top: 85px;
 }
 .movies__container{
-    margin: 0 auto;
+    
     width: 358px;
 }
 .movies__container {
@@ -247,11 +247,9 @@ line-height: 150%;
     background-color: #1F1F1F;
     color: #FFF;
 }
-h2{
+.movies__h2{
     color: #FFF;
-font-family: Manrope;
 font-size: 24px;
-font-style: normal;
 font-weight: 700;
 line-height: 150%;
 }
@@ -273,53 +271,81 @@ margin: 0px 8px 0px 8px;
 }
 .card__text{
     color:  #FFF;
-font-family: Manrope;
 font-size: 14px;
-font-style: normal;
 font-weight: 600;
 line-height: 150%;
 width: 121px;
 }
 .card-elements{
     display: flex;
-    
+    justify-content: space-between;
 }
-.top10__card-text{
-    color: #FFF;
-font-family: Manrope;
-font-size: 16px;
-font-style: normal;
+.top__cards{
+    display: flex;
+margin: 0px 8px 0px 8px;
+padding: 20px;
+flex-direction: column;
+border-radius: 12px;
+border: 1px solid #262626;
+background:  #1A1A1A;
+}
+.top-button{
+    display: flex;
+padding: 8px;
+align-items: flex-start;
+gap: 10px;
+border-radius: 4px;
+background:#E50000;
+width: 70px;
+}
+.top-button__text{
+    color:  #FFF;
+
+font-size: 12px;
+
 font-weight: 600;
 line-height: 150%;
 }
-.top10__cards-cont{
+.top-container{
     display: flex;
 }
-.top10__cards{
+.top-card-elements{
     display: flex;
-height: 268px;
-padding: 20px;
+    justify-content: space-between;
+    
+}
+.now-card{
+    display: flex;
+height: 259px;
+padding: 12px;
 flex-direction: column;
-margin: 0px 8px 0px 8px;
-border-radius: 12px;
+align-items: flex-start;
+gap: 12px;
+flex: 1 0 0;
+
+border-radius: 10px;
 border: 1px solid  #262626;
 background: #1A1A1A;
+
 }
-.top10__card-button{
+.now-card-elements{
     display: flex;
-padding: 8px;
-
-gap: 10px;
-border-radius: 4px;
-background: #E50000;
-
+padding: 4px 8px 4px 4px;
+align-items: center;
+gap: 2px;
+border-radius: 51px;
+border: 1px solid  #262626;
+background: #141414;
 }
-.top10__button-text{
-    color: #FFF;
+.new-card__cont{
+    display: flex;
+    justify-content: space-between;
+}
+.now__text{
+    color: #999;
 font-family: Manrope;
 font-size: 12px;
 font-style: normal;
-font-weight: 600;
+font-weight: 500;
 line-height: 150%;
 }
-
