@@ -1,0 +1,103 @@
+<<<<<<< Updated upstream
+.body{
+  background-color: #141414;    
+}
+.start-button{
+  display: flex;
+  padding: 18px 24px;
+  align-items: center;
+  gap: 4px;
+  border-radius: 8px;
+  background: var(--Red-45, #E50000);
+}
+.content__best{
+  color: var(--Absolute-White, #FFF);
+  text-align: center;
+  font-family: Manrope;
+  font-size: 58px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  margin: 0;
+}
+.content__vibe{
+  color: var(--Grey-60, #999);
+  text-align: center;
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  margin: 0;
+}
+.content{
+  display: flex;
+  padding: 0px 412px;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  align-self: stretch;
+}
+.text__conteiner{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+  flex: 1 0 0;
+}
+.wide{
+  color: var(--Absolute-White, #FFF);
+  font-family: Manrope;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  margin: 0;
+}
+.wide__description{
+  color: var(--Grey-60, #999);
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  margin-bottom: 80px;
+}
+.conteiner{
+  display: flex;
+  width: 1597px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 80px;
+}
+.card__conteiner{
+  display: flex;
+align-items: flex-start;
+gap: 30px;
+align-self: stretch;
+}
+.text__card{
+  color: var(--Absolute-White, #FFF);
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+}
+.content{
+  gap: 14px;
+}
+.card__conteiner{
+  gap: 30px;
+  width: 100%;
+}
+.icon__card{
+  display: flex;
+align-items: center;
+align-self: stretch;
+}
+.overlay{
+  
+}
+=======
+>>>>>>> Stashed changes
